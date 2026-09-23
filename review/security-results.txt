@@ -1,0 +1,9 @@
+PASS privacy: raw free text and clinical detail never pass
+PASS privacy: safe exact query and explicit algorithm codes
+PASS ECG: adult boundaries do not depend on rounded display
+PASS ECG: brady never routes to tachy and pediatric not classified by adult thresholds
+PASS ECG: 25/50 mm speed, contradiction and multi-possibility
+PASS MAP and shock index: valid math, missing fields, zero divisor
+PASS backend rejects patient fields, arbitrary searches and clinical event detail
+PASS backend origin enforcement and strict output schema
+{"passed":8}

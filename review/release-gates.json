@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-23",
+  "version": "0.9.1",
+  "gates": {
+    "drug_card_enrichment": {"status": "implemented_official_document_depth_partial", "canonical_cards": 34, "enriched_cards": 34, "direct_official_document_for_every_listed_product": false},
+    "pediatric_ecg": {"status": "implemented_from_EK2", "build_warning_retained": true},
+    "ek2_full_clinical_audit": {"status": "complete", "historical_rows": 148, "active_unique_rules": 147, "navigation_edges": 100},
+    "automated_pwa_offline": {"status": "passed"},
+    "real_device_pwa_offline": {"status": "not_possible_in_build_environment"},
+    "headless_browser_pwa": {"status": "blocked_by_environment_policy", "error": "ERR_BLOCKED_BY_ADMINISTRATOR"},
+    "cloudflare_live_deploy": {"status": "not_run"}
+  }
+}

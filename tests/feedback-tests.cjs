@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+(async()=>{const root=__dirname+'/../';let sent=[],kv=new Map();
+const ctx={Response,Request,TextDecoder,TextEncoder,Uint8Array,URL,crypto:require('crypto').webcrypto,AbortSignal,fetch:async(u,o)=>{sent.push({u,o});return new Response('{}',{status:200})}};vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(root+'functions/api/_shared.js','utf8').replace(/export /g,''),ctx);
+vm.runInContext(fs.readFileSync(root+'functions/api/feedback.js','utf8').replace(/^import .*\n/,'').replace(/export /g,''),ctx);
+const env={RESEND_API_KEY:'fake-test-value',RATE_SALT:'test-only',FEEDBACK_TO:'test@example.test',FEEDBACK_FROM:'test@example.test',FEEDBACK_RATE:{get:async k=>kv.get(k),put:async(k,v)=>kv.set(k,v)}};
+const b={message:'Sentetik arayüz geri bildirimi',version:'0.9.1',screen:'home',device:'desktop',website:''};
+const call=(body,environment=env,origin='https://hun.test')=>ctx.onRequest({env:environment,request:new Request('https://hun.test/api/feedback',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','CF-Connecting-IP':'192.0.2.1'},body:JSON.stringify(body)})});
+assert.equal((await call(b,{})).status,503);assert.equal(sent.length,0);console.log('PASS feedback disabled without server setup');
+assert.equal((await call({...b,patient:{age:50}})).status,400);assert.equal((await call({...b,website:'bot'})).status,400);assert.equal((await call(b,env,'https://other.test')).status,403);assert.equal(sent.length,0);console.log('PASS feedback rejects extra patient fields, honeypot and foreign origin');
+for(let i=0;i<5;i++)assert.equal((await call(b)).status,200);assert.equal((await call(b)).status,429);assert.equal(sent.length,5);console.log('PASS feedback sequential abuse counter');
+const out=JSON.parse(sent[0].o.body);assert.equal(out.to[0],'test@example.test');assert(!out.text.includes('192.0.2.1'));assert(!out.text.includes('fake-test-value'));assert.equal(kv.size,1);assert(![...kv.keys()][0].includes('192.0.2.1'));console.log('PASS email payload excludes raw IP and credentials');
+})().catch(e=>{console.error(e);process.exitCode=1});

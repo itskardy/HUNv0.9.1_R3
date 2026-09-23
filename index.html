@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>Health Unit Navigator</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <button class="brandmark" id="homeLogo" type="button" aria-label="Ana sayfaya dön"><img src="./icon-192.png" alt="Health Unit Navigator"></button>
+  <div class="brand"><b>Health Unit Navigator</b><span>Hastane Öncesi Acil Tıbbi Yardım ve Bakım Akış Şemaları</span></div>
+  <div class="versionpill">EK-2 25.08.2026 • v0.9.1</div>
+</header>
+<main>
+  <div id="updateBanner" class="updateBanner">Yeni uygulama sürümü hazır. Klinik içerik sessizce değiştirilmedi.<button id="applyUpdate">Güncellemeyi uygula</button></div>
+
+  <button id="activePatientBar" class="patientbar" type="button">
+    <span class="patientdot"></span>
+    <span><b>Aktif hasta yok</b><small>Hasta bilgisi ve vital kaydı için dokunun</small></span>
+    <strong>→</strong>
+  </button>
+
+  <div id="globalSearch" class="searchwrap">
+    <div class="search"><span class="mag">⌕</span><input id="q" placeholder="Belirti, ilaç, algoritma, kod veya EK-2 metni ara…" autocomplete="off"><button id="clear">✕</button></div>
+    <div class="searchhint">Arama; algoritma, Anahtar Bilgiler ve EK-2'nin klinik sayfalarındaki metin indeksinde cihaz üzerinde çalışır.</div>
+  </div>
+
+
+
+  <section id="homeScreen" class="screen active">
+    <div class="hero">
+      <img class="heroLogo" src="./icon-192.png" alt="HUN medic amblemi"><div class="eyebrow">BETA / GELİŞTİRME TESTİ</div>
+      <h1>Health Unit Navigator</h1>
+      <p>EK-2 akış şemaları, doz ve uygulama hesaplama, ilaç kartları ve tam metin arama; sahada hızlı erişim için düzenlendi.</p>
+      <div class="counts"><div class="count"><b>41</b> Yetişkin</div><div class="count"><b>37</b> Pediatrik</div><div class="count"><b>78</b> Akış şeması</div><div class="count"><b id="keyCount">—</b> Anahtar bilgi</div></div>
+    </div>
+
+    <div class="betaCard"><b>Beta / test aşamasında</b>v0.9.1 yayın kontrolleri sürüyor. Bu geliştirme paketi klinik kullanıma hazır değildir. Klinik kararlarda resmi EK-2 akış şeması ve kurum prosedürleri esas alınmalıdır.</div>
+
+    <div class="installbar">
+      <div><b id="offlineText"><span class="statusdot warn"></span>Offline paket kontrol ediliyor</b><small id="offlineSub">Hazırladıktan sonra bu uygulama internet bağlantısı olmadan kullanılabilir.</small><div class="progress" id="offlineProgress"><span></span></div></div>
+      <div style="display:flex;gap:6px"><button id="installBtn" class="miniBtn" style="display:none">Uygulamayı Yükle</button><button id="offlineBtn" class="miniBtn gold">Offline Hazırla</button></div>
+    </div>
+
+    <div class="homecards">
+      <button class="homecard" data-homecat="adult"><span class="arrow">→</span><b>Yetişkin</b><span>Tüm algoritmaları tek listede aç</span><span class="bigcount">41</span></button>
+      <button class="homecard gold" data-homecat="pediatric"><span class="arrow">→</span><b>Pediatrik</b><span>Çocuk + Doğum / Yenidoğan</span><span class="bigcount">37</span></button>
+      <button class="homecard dark" id="drugHome"><span class="arrow">→</span><b>İlaç Kartları</b><span>EK-2'de geçen ilaç ve solüsyonlar</span><span class="bigcount" id="drugCount">—</span></button>
+      <button class="homecard" id="keyHome"><span class="arrow">→</span><b>Anahtar Bilgiler</b><span>İlgili kategorilerle bağlantılı kaynak sayfaları</span><span class="bigcount" id="keyCount2">—</span></button>
+      <button class="homecard soft" id="doseHome"><span class="arrow">→</span><b>Doz Hesaplama</b><span>EK-2 bağlamına göre hesapla</span><span class="bigcount">+</span></button>
+      <button class="homecard patient" id="patientHome"><span class="arrow">→</span><b>Aktif Hasta</b><span>Vital, tedavi ve vaka sonu raporu</span><span class="bigcount">01</span></button>
+      <button class="homecard toolsCard" id="toolsHome"><span class="arrow">→</span><b>Hızlı Araçlar</b><span>GKS, BE-FAST, AVPU ve EKG yardımcısı</span><span class="bigcount">+</span></button>
+    </div>
+    <section class="workcard infoCard"><h3>Bilgilendirme</h3><p>Beta / test aşamasında. Hasta verileri yalnız bu cihazda tutulur. Çevrimdışıyken geri bildirim gönderilemez. Anonim kullanım olaylarında hasta alanları ve serbest arama metni gönderilmez.</p><button id="openFeedback" class="actionBtn ghost">Geri bildirim yapmak istiyorum</button><button id="catSupport" class="actionBtn ghost">Güzel iş, biraz kuru mama hediye etmek istiyorum</button><p id="catMessage" role="status"></p></section>
+    <div class="footerCredit">Made by <b>Kardy</b> • v0.9.1</div>
+
+    <div id="quickWrap" style="display:none">
+      <div class="sectionhead"><h2>Hızlı Erişim</h2><small>Favorilerinizden ilk 6 kayıt</small></div>
+      <div id="quick" class="quickrow"></div>
+    </div>
+    <div id="recentWrap" style="display:none">
+      <div class="sectionhead"><h2>Son Açılanlar</h2><small>Bu cihazda</small></div>
+      <div id="recent" class="quickrow"></div>
+    </div>
+  </section>
+
+  <section id="listScreen" class="screen">
+    <div class="sectionhead"><h2 id="listTitle">Algoritmalar</h2><small>Bir kategori seçerek listeyi daraltın</small></div>
+    <div id="categoryChips" class="categorychips"></div>
+    <div id="algoList" class="algogroups"></div>
+  </section>
+
+  <section id="drugScreen" class="screen">
+    <div class="sectionhead"><h2>İlaç Kartları</h2><small>Yalnızca EK-2 kaynaklı bağlantılar</small></div>
+    <div class="notice"><b>EK-2 kaynaklı ilaç kartları.</b> Negatif bağlamdaki ilaç/solüsyon kullanımları gösterilmez. Her klinik bağlam yalnızca bağlı olduğu şemayı açar; doz hesaplamaya şemanın altındaki ilgili ilaç bağlantısından geçilir.</div>
+    <div id="alpha" class="alpha"></div>
+    <div id="drugGrid" class="druggrid"></div>
+  </section>
+
+  <section id="keyScreen" class="screen">
+    <div class="sectionhead"><h2>Anahtar Bilgiler</h2><button id="keyCats">Kategori seç</button></div>
+    <div id="keyList" class="list"></div>
+  </section>
+
+  <section id="favScreen" class="screen">
+    <div class="sectionhead"><h2>Favoriler / Hızlı Erişim</h2><small>Bu cihazda saklanır</small></div>
+    <div id="favList" class="list"></div>
+  </section>
+
+  <section id="searchScreen" class="screen">
+    <div class="sectionhead"><h2>Arama Sonuçları</h2><small id="searchCount"></small></div>
+    <div id="searchResults" class="searchgroups"></div>
+  </section>
+
+  <section id="patientScreen" class="screen">
+    <div class="sectionhead"><h2>Aktif Hasta</h2><small>Cihazda yalnızca aktif vaka tutulur</small></div>
+    <div class="clinicalNotice"><b>Geçici klinik kayıt</b>İsim ve T.C. kimlik numarası alınmaz. Sicil boş bırakılırsa raporda “Sivil” görünür. Yeni Hasta işlemi mevcut vaka verilerini siler. Kayıt en fazla 24 saat bu cihazda tutulur; merkezi hasta kaydı yoktur.</div>
+
+    <div class="workspaceGrid">
+      <section class="workcard patientIdentity">
+        <div class="workcardHead"><div><small>HASTA OTURUMU</small><h3 id="patientTitle">Aktif hasta yok</h3></div><button id="newPatientBtn" class="dangerGhost">Yeni Hasta</button></div>
+        <div class="fieldgrid patientFields">
+          <label>Sicil <span>isteğe bağlı</span><input id="patientRegistry" inputmode="text" maxlength="24" placeholder="Örn. 200.123"></label>
+          <label>Cinsiyet<select id="patientSex"><option value="">Seçiniz</option><option>Kadın</option><option>Erkek</option><option>Bilinmiyor</option></select></label>
+          <label>Yaş<input id="patientAge" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Örn. 36"></label>
+          <label>Yaş birimi<select id="patientAgeUnit"><option value="year">Yıl</option><option value="month">Ay</option><option value="week" hidden>Hafta (eski kayıt)</option><option value="day">Gün</option></select></label>
+          <label>Kilo (kg)<input id="patientWeight" type="number" min="0.3" step="0.1" inputmode="decimal" placeholder="Örn. 64"></label>
+        </div>
+        <button id="savePatientBtn" class="actionBtn gold">Hasta Bilgilerini Kaydet</button>
+        <div id="patientPinnedWrap" class="patientPinnedWrap"><div class="workcardHead"><div><small>HIZLI ERİŞİM</small><h3>Hızlı Erişim Algoritmaları</h3></div></div><div id="patientPinnedAlgos" class="pinnedAlgoList"><div class="empty">Henüz algoritma sabitlenmedi.</div></div></div>
+      </section>
+
+      <section class="workcard">
+        <div class="workcardHead"><div><small>YENİ ÖLÇÜM</small><h3>Vital ekle</h3></div><span id="vitalNow" class="timeBadge"></span></div>
+        <div class="fieldgrid vitalFields">
+          <label>Ölçüm tarihi / saati<div class="dateTimeField"><input id="vitalTime" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="vitalTime">Şimdi</button></div></label>
+          <label>Sistolik TA<input id="vitalSys" type="number" min="0" inputmode="numeric" placeholder="mmHg"></label>
+          <label>Diyastolik TA<input id="vitalDia" type="number" min="0" inputmode="numeric" placeholder="mmHg"></label>
+          <label>Nabız<input id="vitalPulse" type="number" min="0" inputmode="numeric" placeholder="/dk"></label>
+          <label>Solunum<input id="vitalResp" type="number" min="0" inputmode="numeric" placeholder="/dk"></label>
+          <label>SpO₂<input id="vitalSpo2" type="number" min="0" max="100" inputmode="decimal" placeholder="%"></label>
+          <label>Ateş<input id="vitalTemp" type="number" min="25" max="45" step="0.1" inputmode="decimal" placeholder="°C"></label>
+          <label>Kan şekeri<input id="vitalGlucose" type="number" min="0" inputmode="decimal" placeholder="mg/dL"></label>
+          <label>ETCO₂<input id="vitalEtco2" type="number" min="0" inputmode="decimal" placeholder="mmHg"></label>
+          <label>GKS<input id="vitalGcs" type="number" min="3" max="15" inputmode="numeric" placeholder="3–15"></label>
+        </div>
+        <div class="fieldgrid testFields"><label>Test adı<input id="rapidTestName" maxlength="100" placeholder="Troponin testi, alkol testi..."></label><label>Test sonucu<select id="rapidTestResult"><option value="">Girilmedi</option><option>Pozitif</option><option>Negatif</option><option>Geçersiz</option><option>Belirsiz</option></select></label><label>Test değeri<input id="rapidTestValue" type="text" inputmode="decimal" maxlength="40" placeholder="Gerekiyorsa"></label><label>Birim<input id="rapidTestUnit" maxlength="24" placeholder="Gerekiyorsa"></label></div><p class="fieldhelp">Hızlı/POCT test kaydıdır. Kategorik testlerde değer ve birim zorunlu değildir; klinik yorum otomatik üretilmez.</p>
+        <button id="addVitalBtn" class="actionBtn">Yeni Vital Ekle</button>
+      </section>
+
+      <section class="workcard">
+        <div class="workcardHead"><div><small>MÜDAHALE</small><h3>Tedavi / işlem ekle</h3></div></div>
+        <div class="fieldgrid treatmentFields">
+          <label>Uygulama tarihi / saati<div class="dateTimeField"><input id="treatmentTime" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="treatmentTime">Şimdi</button></div></label>
+          <label>Tür<select id="treatmentType"><option>İlaç</option><option>Oksijen</option><option>Sıvı</option><option>Havayolu</option><option>EKG</option><option>Diğer işlem</option></select></label>
+          <label class="wide">İşlem / ilaç<input id="treatmentName" maxlength="100" placeholder="Örn. Oksijen"></label>
+          <label>Doz / miktar<input id="treatmentDose" maxlength="60" placeholder="Örn. 4 L/dk"></label>
+          <label>Uygulama yolu<input list="routeOptions" id="treatmentRoute" maxlength="40" placeholder="Örn. IV / IM"></label>
+          <label>Uygulayan kişi (isteğe bağlı)<input id="treatmentPractitioner" maxlength="100"></label><label class="wide">Not<textarea id="treatmentNote" rows="2" maxlength="300" placeholder="Yanıt veya ek bilgi"></textarea></label>
+        </div>
+        <button id="addTreatmentBtn" class="actionBtn">Tedaviyi Kayda Ekle</button>
+      </section>
+    </div>
+
+    <section class="workcard"><div class="workcardHead"><h3>Klinik değerlendirmeler</h3><button id="patientQuickTools" class="actionBtn">+ Hızlı Klinik Araç Ekle</button></div><label>Hasta / vaka sonu notu<textarea id="caseNote" rows="3" maxlength="3000" placeholder="Serbest metin notu"></textarea></label><button id="saveCaseNote" class="actionBtn">Notu Kaydet</button></section>
+    <section class="workcard timelineCard">
+      <div class="workcardHead"><div><small>KRONOLOJİ</small><h3>Hasta seyri</h3></div><button id="createReportBtn" class="actionBtn gold compact">Vaka Sonu Raporu</button></div>
+      <div id="caseTimeline" class="caseTimeline"><div class="empty">Henüz kayıt yok.</div></div>
+    </section>
+  </section>
+
+  <section id="toolsScreen" class="screen">
+    <label class="standaloneLabel">Değerlendirme tarihi / saati<div class="dateTimeField"><input id="assessmentTime" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="assessmentTime">Şimdi</button></div></label><div class="sectionhead"><h2>Hızlı Klinik Araçlar</h2><small>Manuel giriş · sonuçlar otomatik kaydedilmez</small></div>
+    <div class="toolTabs" role="tablist">
+      <button class="active" data-tooltab="gcs">GKS</button>
+      <button data-tooltab="fast">BE-FAST</button>
+      <button data-tooltab="avpu">AVPU</button>
+      <button data-tooltab="ecg">EKG</button>
+      <button data-tooltab="map">MAP / Şok İndeksi</button><button data-tooltab="sample">SAMPLE</button><button data-tooltab="xabcde">XABCDE</button><button data-tooltab="opqrst">OPQRST</button>
+    </div>
+
+    <section id="tool-gcs" class="toolPane active">
+      <div class="workcard"><div class="workcardHead"><div><small>GLASGOW KOMA SKALASI</small><h3>GKS hesaplama</h3></div><strong id="gcsTotal" class="scoreBadge">—</strong></div>
+        <div class="fieldgrid scoreFields">
+          <label>Göz yanıtı<select id="gcsEye"><option value="">Seçiniz</option><option value="4">4 · Spontan</option><option value="3">3 · Sese</option><option value="2">2 · Ağrıya</option><option value="1">1 · Yanıt yok</option><option value="NT">Değerlendirilemedi</option></select></label>
+          <label>Sözel yanıt<select id="gcsVerbal"><option value="">Seçiniz</option><option value="5">5 · Oryante</option><option value="4">4 · Konfüze</option><option value="3">3 · Uygunsuz kelimeler</option><option value="2">2 · Anlaşılmaz sesler</option><option value="1">1 · Yanıt yok</option><option value="T">Entübe / değerlendirilemedi (T)</option></select></label>
+          <label>Motor yanıt<select id="gcsMotor"><option value="">Seçiniz</option><option value="6">6 · Emirlere uyar</option><option value="5">5 · Ağrıyı lokalize eder</option><option value="4">4 · Ağrıdan çeker</option><option value="3">3 · Anormal fleksiyon</option><option value="2">2 · Ekstansiyon</option><option value="1">1 · Yanıt yok</option><option value="NT">Değerlendirilemedi</option></select></label>
+        </div>
+        <div id="gcsSummary" class="resultBox muted">Üç bileşeni seçin.</div>
+        <button id="saveGcsBtn" class="actionBtn">Hasta Kaydına Ekle</button>
+      </div>
+    </section>
+
+    <section id="tool-fast" class="toolPane">
+      <div class="workcard"><div class="workcardHead"><div><small>İNME TARAMASI</small><h3>BE-FAST</h3></div><strong id="fastStatus" class="scoreBadge">—</strong></div>
+        <div class="clinicalNotice"><b>EK-2 dışı yardımcı tarama</b>American Stroke Association BE-FAST. Tanı koymaz; negatif sonuç inmeyi dışlamaz. <a href="https://www.stroke.org/en/about-stroke/stroke-symptoms" target="_blank" rel="noopener noreferrer">Kaynak</a></div><div class="yesNoGrid"><div><span>B — Ani denge kaybı var mı?</span><div class="segmented" data-choice="fastBalance"><button data-value="yes">Evet</button><button data-value="no">Hayır</button><button data-value="unknown">?</button></div></div><div><span>E — Ani görme değişikliği var mı?</span><div class="segmented" data-choice="fastEyes"><button data-value="yes">Evet</button><button data-value="no">Hayır</button><button data-value="unknown">?</button></div></div>
+          <div><span>Yüzde asimetri var mı?</span><div class="segmented" data-choice="fastFace"><button data-value="yes">Evet</button><button data-value="no">Hayır</button><button data-value="unknown">?</button></div></div>
+          <div><span>Kolda güçsüzlük / düşme var mı?</span><div class="segmented" data-choice="fastArm"><button data-value="yes">Evet</button><button data-value="no">Hayır</button><button data-value="unknown">?</button></div></div>
+          <div><span>Konuşma bozukluğu var mı?</span><div class="segmented" data-choice="fastSpeech"><button data-value="yes">Evet</button><button data-value="no">Hayır</button><button data-value="unknown">?</button></div></div>
+        </div>
+        <label class="standaloneLabel">Son bilinen normal zaman<div class="dateTimeField"><input id="fastTime" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="fastTime">Şimdi</button></div></label>
+        <div id="fastSummary" class="resultBox muted">Bulguları işaretleyin.</div>
+        <div class="buttonRow"><button id="openStrokeAlgo" class="actionBtn ghost">İnme / SVO Şemasını Aç</button><button id="saveFastBtn" class="actionBtn">Hasta Kaydına Ekle</button></div>
+      </div>
+    </section>
+
+    <section id="tool-avpu" class="toolPane">
+      <div class="workcard"><div class="workcardHead"><div><small>BİLİNÇ DÜZEYİ</small><h3>AVPU</h3></div><strong id="avpuStatus" class="scoreBadge">—</strong></div>
+        <div class="choiceCards" id="avpuChoices"><button data-value="A"><b>A</b>Uyanık</button><button data-value="V"><b>V</b>Sözel uyarana yanıt</button><button data-value="P"><b>P</b>Ağrılı uyarana yanıt</button><button data-value="U"><b>U</b>Yanıt yok</button></div>
+        <button id="saveAvpuBtn" class="actionBtn">Hasta Kaydına Ekle</button>
+      </div>
+    </section>
+
+    <section id="tool-ecg" class="toolPane">
+      <div class="workcard"><div class="workcardHead"><div><small>MANUEL RİTİM DEĞERLENDİRMESİ</small><h3>EKG Yardımcısı</h3></div><strong id="ecgRateBadge" class="scoreBadge">—/dk</strong></div>
+        <div class="clinicalNotice"><b>YAPIM AŞAMASINDA</b>EKG klinik karar desteği doğrulama aşamasındadır. Sonuçlar kullanıcı tarafından doğrulanmadan klinik karar için kullanılmamalıdır. EK-2 dışı ritim değerlendirme yardımcısıdır; EK-2 tedavi/doz mantığını değiştirmez.</div>
+        <div id="ecgPatientContext" class="ecgPatientContext"><b>Hasta bağlamı</b><span>Aktif hasta yok. Gerekli EKG bilgileri manuel girilebilir.</span></div>
+        <div class="fieldgrid ecgFields">
+          <label>Hasta grubu<select id="ecgGroup"><option value="">Seçiniz</option><option value="adult">Yetişkin</option><option value="child">Pediatrik</option></select></label>
+          <div id="ecgPediatricAgeWrap" class="hidden ecgAutoAge"><label>Pediatrik yaş<input id="ecgAge" inputmode="decimal" placeholder="Yaş"></label><label>Yaş birimi<select id="ecgAgeUnit"><option value="year" selected>Yıl</option><option value="month">Ay</option><option value="day">Gün</option></select></label><small id="ecgAgeSource"></small></div>
+          <label>Doğrudan kalp hızı (/dk)<input id="ecgDirectRate" type="number" min="1" step="1" placeholder="Girildiğinde hız kaynağı budur"></label><label>Kâğıt hızı<select id="ecgSpeed"><option value="25">25 mm/sn</option><option value="50">50 mm/sn</option></select></label>
+          <label>Ritim düzenli mi?<select id="ecgRegular"><option value="">Seçiniz</option><option value="yes">Evet</option><option value="no">Hayır</option><option value="unknown">Değerlendirilemedi</option></select></label>
+          <label>R-R küçük kare sayısı<input id="ecgRrBoxes" type="number" min="1" step="0.1" inputmode="decimal" placeholder="Düzenli ritim"></label>
+          <label>Düzensiz ritimde QRS sayısı<input id="ecgQrsCount" type="number" min="1" step="1" inputmode="numeric" placeholder="Şeritte say"></label>
+          <label>Şerit süresi<select id="ecgStripSeconds"><option value="10">10 saniye</option><option value="6">6 saniye</option></select></label>
+          <label>QRS değerlendirmesi<select id="ecgWidth"><option value="">Ölçümden / seçiniz</option><option value="narrow">Dar</option><option value="wide">Geniş</option><option value="unknown">Değerlendirilemedi</option></select></label><label>QRS küçük kare sayısı<input id="ecgQrsBoxes" type="number" min="0.5" step="0.5" inputmode="decimal" placeholder="Örn. 2"></label>
+          <label>P dalgaları seçiliyor mu?<select id="ecgPVisible"><option value="">Seçiniz</option><option value="yes">Evet</option><option value="no">Hayır</option><option value="unknown">Değerlendirilemedi</option></select></label>
+          <label>Her P’yi QRS takip ediyor mu?<select id="ecgPtoQrs"><option value="">Seçiniz</option><option value="yes">Evet</option><option value="no">Hayır</option><option value="unknown">Değerlendirilemedi</option></select></label>
+          <label>Her QRS’den önce P var mı?<select id="ecgQrsBeforeP"><option value="">Seçiniz</option><option value="yes">Evet</option><option value="no">Hayır</option><option value="unknown">Değerlendirilemedi</option></select></label>
+          <label>PR aralığı sabit mi?<select id="ecgPrConstant"><option value="">Seçiniz</option><option value="yes">Evet</option><option value="no">Hayır</option><option value="unknown">Değerlendirilemedi</option></select></label>
+        </div>
+        <section class="ecgClinicalCard" aria-labelledby="ecgClinicalTitle">
+          <div class="ecgClinicalHead"><div><small>KLİNİK BULGULAR / KOŞULLAR</small><b id="ecgClinicalTitle">EKG ile birlikte değerlendir</b></div></div>
+          <div class="ecgClinicalRow"><span>AKS şüphesi oluşturan klinik bulgu</span><input id="ecgAcs" type="hidden" value=""><div class="segmented compactSegment" data-ecg-choice="ecgAcs"><button type="button" data-value="yes">Var</button><button type="button" data-value="no">Yok</button><button type="button" data-value="unknown">Değerlendirilemedi</button></div></div>
+          <div id="ecgPediatricPerfusionWrap" class="hidden ecgConditionGroup"><label class="conditionCheck"><input id="ecgPoorPerfusion" type="checkbox"><span><b>Kötü perfüzyon bulguları</b><small>Mevcutsa işaretleyin</small></span></label><label class="conditionCheck"><input id="ecgDespiteOxygen" type="checkbox"><span><b>Yeterli oksijenasyon/ventilasyona rağmen sürüyor</b><small>Koşul doğrulandıysa işaretleyin</small></span></label><div class="ek2Info"><b>EK-2</b><span>Çocuk Bradikardi algoritmasındaki KAH &lt;60/dk tedavi eşiği bu klinik koşullarla birlikte değerlendirilir.</span></div></div>
+        </section>
+        <div class="stLeadTitle"><div><b>ST elevasyonu olan derivasyonlar</b><small>Varsa işaretleyin. Boş kutular negatif sonuç olarak kaydedilmez.</small></div><span id="stLeadSummary"></span></div>
+        <div class="stGrid stCheckboxGrid" role="group" aria-label="ST elevasyonu olan derivasyonlar">
+          <label><input id="st-I" type="checkbox"><span>I</span></label><label><input id="st-II" type="checkbox"><span>II</span></label><label><input id="st-III" type="checkbox"><span>III</span></label><label><input id="st-aVR" type="checkbox"><span>aVR</span></label><label><input id="st-aVL" type="checkbox"><span>aVL</span></label><label><input id="st-aVF" type="checkbox"><span>aVF</span></label><label><input id="st-V1" type="checkbox"><span>V1</span></label><label><input id="st-V2" type="checkbox"><span>V2</span></label><label><input id="st-V3" type="checkbox"><span>V3</span></label><label><input id="st-V4" type="checkbox"><span>V4</span></label><label><input id="st-V5" type="checkbox"><span>V5</span></label><label><input id="st-V6" type="checkbox"><span>V6</span></label>
+        </div>
+        <p class="fieldhelp">Anatomik bölge etiketleri EK-2 dışı yardımcı bilgidir; AHA 12 derivasyon bölge referansı kullanılmıştır. <a href="https://www.heart.org/-/media/images/affiliates/gra/quality-metrics-for-stemi--mark-e-pinchalk-ms-emtp.pdf" target="_blank" rel="noopener noreferrer">AHA kaynağı</a></p>
+        <div id="ecgResult" class="resultBox muted">Kâğıt hızı, ritim düzeni ve ölçümleri girin.</div>
+        <div class="buttonRow"><span id="ecgAlgoLinks" class="buttonRow"></span><button id="saveEcgBtn" class="actionBtn">Hasta Kaydına Ekle</button></div>
+      </div>
+    </section>
+
+    <section id="tool-map" class="toolPane"><div class="workcard"><h3>MAP / Şok İndeksi</h3><div class="clinicalNotice"><b>EK-2 dışı yardımcı hesap</b>MAP yaklaşık değerdir: (Sistolik + 2 × Diyastolik) / 3. Şok indeksi: Nabız / Sistolik. Hemodinamik değerlendirmeye yardımcı göstergedir. Tek başına tanı veya tedavi kararı için kullanılmaz.</div><div class="fieldgrid"><label>Sistolik (mmHg)<input id="mapSys" type="number" min="1"></label><label>Diyastolik (mmHg)<input id="mapDia" type="number" min="0"></label><label>Nabız (/dk)<input id="mapPulse" type="number" min="0"></label></div><button id="useLastVital" class="actionBtn ghost">Son vitalden doldur</button><div id="mapResult" class="resultBox"></div><button id="saveMap" class="actionBtn">Hasta Kaydına Ekle</button><p class="fieldhelp"><a href="https://www.ncbi.nlm.nih.gov/books/NBK538226/" target="_blank" rel="noopener noreferrer">MAP kaynak</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6698590/" target="_blank" rel="noopener noreferrer">Şok indeksi kaynak</a></p></div></section>
+<section id="tool-sample" class="toolPane"><div class="workcard"><h3>SAMPLE</h3><div class="clinicalNotice"><b>EK-2 destekli değerlendirme</b>SAMPLE alanları yapılandırılmış kayıt için kullanılır. Otomatik tanı, puan veya tedavi üretilmez.</div><div class="fieldgrid"><label class="wide">S — Signs/Symptoms · Belirti/bulgular<textarea id="sample-0" rows="2" maxlength="1000"></textarea></label><label class="wide">A — Allergies · Alerjiler<textarea id="sample-1" rows="2" maxlength="1000"></textarea></label><label class="wide">M — Medications · İlaçlar<textarea id="sample-2" rows="2" maxlength="1000"></textarea></label><label class="wide">P — Past Medical History · Özgeçmiş<textarea id="sample-3" rows="2" maxlength="1000"></textarea></label><label class="wide">L — Last Oral Intake / Last Menstrual Period · Son oral alım / son adet<textarea id="sample-4" rows="2" maxlength="1000"></textarea></label><label class="wide">E — Events Preceding Call · Öncesindeki olaylar<textarea id="sample-5" rows="2" maxlength="1000"></textarea></label></div><button id="save-sample" class="actionBtn">Hasta Kaydına Ekle</button></div></section><section id="tool-xabcde" class="toolPane"><div class="workcard"><h3>XABCDE</h3><div class="clinicalNotice"><b>EK-2 destekli değerlendirme</b>XABCDE alanları yapılandırılmış kayıt için kullanılır. Otomatik tanı, puan veya tedavi üretilmez.</div><div class="fieldgrid"><label class="wide">X — Masif dış kanama<textarea id="xabcde-0" rows="2" maxlength="1000"></textarea></label><label class="wide">A — Havayolu<textarea id="xabcde-1" rows="2" maxlength="1000"></textarea></label><label class="wide">B — Solunum<textarea id="xabcde-2" rows="2" maxlength="1000"></textarea></label><label class="wide">C — Dolaşım<textarea id="xabcde-3" rows="2" maxlength="1000"></textarea></label><label class="wide">D — Nörolojik değerlendirme<textarea id="xabcde-4" rows="2" maxlength="1000"></textarea></label><label class="wide">E — Tam değerlendirme / çevre<textarea id="xabcde-5" rows="2" maxlength="1000"></textarea></label></div><button id="save-xabcde" class="actionBtn">Hasta Kaydına Ekle</button></div></section><section id="tool-opqrst" class="toolPane"><div class="workcard"><h3>OPQRST / PQRST</h3><div class="clinicalNotice">EK-2 dışı yapılandırılmış öykü / değerlendirme kaydı. Otomatik tanı, puan veya tedavi üretilmez. <a href="https://www.ncbi.nlm.nih.gov/books/NBK593197/table/ch2history.T.sample_pqrstu_focused_quest/" target="_blank" rel="noopener noreferrer">Kaynak</a></div><div class="fieldgrid"><label class="wide">O — Onset · Başlangıç<textarea id="opqrst-0" rows="2" maxlength="1000"></textarea></label><label class="wide">P — Provocation/Palliation · Artıran/azaltan<textarea id="opqrst-1" rows="2" maxlength="1000"></textarea></label><label class="wide">Q — Quality · Nitelik<textarea id="opqrst-2" rows="2" maxlength="1000"></textarea></label><label class="wide">R — Region/Radiation · Yer/yayılım<textarea id="opqrst-3" rows="2" maxlength="1000"></textarea></label><label class="wide">S — Severity · Şiddet<textarea id="opqrst-4" rows="2" maxlength="1000"></textarea></label><label class="wide">T — Time · Zaman / seyir<textarea id="opqrst-5" rows="2" maxlength="1000"></textarea></label></div><button id="save-opqrst" class="actionBtn">Hasta Kaydına Ekle</button></div></section>
+  </section>
+
+  <section id="detail" class="detail">
+    <div class="detailnav"><button class="back" id="back">← Geri</button></div>
+    <div class="detailhead"><div><small id="dmeta"></small><h2 id="dtitle"></h2><span id="dcode" class="code"></span></div><div class="detailActions"><button id="patientPinAlgo" class="pinAlgo" type="button" style="display:none">Hızlı erişime ekle</button><button id="dfav" class="star">☆</button></div></div>
+    <div id="algoDetail">
+      <div class="detailtabs"><button class="detailtab active" data-dtab="flow">Akış Şeması</button><button class="detailtab" data-dtab="keys" id="keyTabBtn">Anahtar Bilgiler</button></div>
+      <div id="flowPane"><div class="sourceframe"><img id="dimg" alt="EK-2 orijinal akış şeması" title="Büyütmek için dokunun"></div></div>
+      <div id="keysPane" style="display:none"><div id="detailKeys" class="keypages"></div></div>
+      <div id="relatedDrugsWrap" style="display:none"><div class="subhead">İlgili İlaçlar / Doz Hesaplama</div><div id="relatedDrugs" class="druggrid"></div></div><div id="relatedAlgosWrap" style="display:none"><div class="subhead">İlgili Algoritmalar</div><div id="relatedAlgos" class="relatedalgos"></div></div>
+    </div>
+    <div id="keyDetail" style="display:none"></div>
+    <div id="drugDetail" style="display:none"></div>
+    <div class="safety"><b>Kaynak güvenliği:</b> Klinik şema ve Anahtar Bilgi görselleri doğrudan yüklenen EK-2'den alınır. Arama metni erişim amacıyla indekslenmiştir; tereddütte orijinal EK-2 sayfası esas alınmalıdır.</div>
+  </section>
+</main>
+</div>
+
+<datalist id="routeOptions"><option value="IV"></option><option value="IO"></option><option value="IM"></option><option value="SC"></option><option value="SL"></option><option value="Nebül"></option><option value="İnhaler"></option><option value="Oral"></option><option value="Rektal"></option><option value="Topikal"></option></datalist>
+<div id="catModal" class="modal">
+  <div class="modalbar"><b id="catModalTitle">Kategoriler</b><button id="closeCats">Kapat</button></div>
+  <div class="modalbody"><div id="catGrid" class="catgrid"></div></div>
+</div>
+
+
+<div id="doseModal" class="modal"><div class="modalbar"><b>Doz + Uygulama Hesaplama</b><button id="closeDose">Kapat</button></div><div class="modalbody">
+  <div class="doseintro"><b>EK-2 kaynaklı hesaplama</b><span>v0.9.1, v0.7’de EK-2’den yapılandırılıp doğrulanmış doz/uygulama veri setini değişmeden kullanır. Yaş-kilo sınırları, maksimum/minimum dozlar, hız ve hazırlama bilgileri kaynakta varsa zorunlu uygulanır.</span></div>
+  <div class="doseform">
+    <label>İlaç / solüsyon<select id="doseDrug"></select></label>
+    <label>Klinik bağlam<select id="doseContext"></select></label>
+    <label>Vücut ağırlığı (kg)<input id="doseWeight" type="number" min="0.5" step="0.1" inputmode="decimal" placeholder="Örn. 18"></label>
+    <label id="doseAgeWrap">Yaş <span class="ageOptional">kural gerektiriyorsa</span><input id="doseAge" type="number" min="0" step="any" inputmode="decimal" placeholder="Yaş"></label><label>Yaş birimi<select id="doseAgeUnit"><option value="year">Yıl</option><option value="month">Ay</option><option value="day">Gün</option><option value="week" hidden>Hafta (eski kayıt)</option></select></label>
+    <button id="calculateDose" class="miniBtn gold">Hesapla</button>
+  </div>
+  <div id="doseResult" class="doseResult"></div>
+</div></div>
+<div id="medRecordModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="medRecordTitle"><div class="modalbar"><b id="medRecordTitle">Hasta Kaydına Ekle</b><button id="closeMedRecord">Kapat</button></div><div class="modalbody"><p id="medPatient"></p><div id="medSource" class="notice"></div><div id="medConfirmSummary" class="medConfirmSummary"></div><button id="expandMedRecord" type="button" class="actionBtn ghost compactEdit" style="display:none">Düzenle</button><div class="fieldgrid medRecordFields"><label>İlaç / solüsyon<input id="medName" maxlength="100"></label><label>Kayıt tarihi / saati<div class="dateTimeField"><input id="medAt" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="medAt">Şimdi</button></div></label><label>Hesaplanan doz<input id="medCalculated" readonly></label><label>Durum<select id="medStatus"><option value="applied" selected>Uygulandı</option><option value="planned">Hesap / plan — uygulanmadı</option></select></label><label>Uygulanan doz / miktar<input id="medApplied" maxlength="100" placeholder="Uygulama yapıldıysa girin"></label><label>Uygulama yolu<input id="medRoute" list="routeOptions" maxlength="80"></label><label>Doz / miktar birimi<input id="medUnit" maxlength="24" placeholder="mg, mcg, mL, mg/dk…"></label><label>Uygulayan kişi (isteğe bağlı)<input id="medPractitioner" maxlength="100"></label><label class="wide" id="medReasonWrap" style="display:none">Doz değişikliği nedeni<input id="medReason" maxlength="500" placeholder="Hesaplanan dozdan farklıysa gerekli"></label><label class="wide">Not<textarea id="medNote" maxlength="1000" rows="3"></textarea></label></div><button id="saveMedRecord" class="actionBtn gold">Hasta Kaydına Ekle</button></div></div>
+<div id="feedbackModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle"><div class="modalbar"><b id="feedbackTitle">Geri bildirim</b><button id="closeFeedback">Kapat</button></div><div class="modalbody"><p>Hasta/sicil/vital/ilaç/doz/sonuç veya kişisel bilgi yazmayın. Yalnız yazdığınız mesaj, sürüm, bölüm ve cihaz türü gönderilir.</p><form id="feedbackForm"><label>Mesaj<textarea id="feedbackMessage" rows="6" minlength="10" maxlength="2000" required></textarea></label><label class="honeypot" aria-hidden="true">Web sitesi<input id="feedbackWebsite" tabindex="-1" autocomplete="off"></label><label><input id="feedbackConfirm" type="checkbox" required> Mesajın hasta bilgisi içermediğini kontrol ettim.</label><button type="submit" class="actionBtn">Gönder</button></form><p id="feedbackStatus" role="status"></p></div></div>
+<div id="reportModal" class="modal"><div class="modalbar"><b>Vaka Sonu Raporu</b><button id="closeReport">Kapat</button></div><div class="modalbody reportBody"><div class="reportActions"><button id="printReport" class="actionBtn gold">Yazdır / PDF Kaydet</button></div><article id="caseReport" class="caseReport"></article></div></div>
+<div id="onboard" class="onboard"><div class="onboardCard"><img class="onboardLogo" src="./icon-192.png" alt="HUN medic amblemi"><div class="eyebrow">HOŞ GELDİNİZ</div><h2>Health Unit Navigator</h2><p>Bu uygulama EK-2 akış şemalarını ve kaynakla sınırlı hesaplama araçlarını telefonda/tablette hızlı erişilebilir hale getirir.</p><div class="checklist"><div class="check">✓ 78 orijinal akış şeması</div><div class="check">✓ Doz + uygulama hesaplama</div><div class="check">✓ Aktif hasta, vital ve vaka sonu raporu</div><div class="check">✓ GKS, BE-FAST, AVPU ve EKG yardımcısı</div><div class="check">✓ Offline kullanım için tek seferlik hazırlama</div></div><p><b>Not:</b> Klinik kararlarda resmi EK-2 kaynağı ve kurum prosedürleri esas alınmalıdır.</p><div class="onboardActions"><button id="skipOnboard">Kapat</button><button class="primary" id="startOfflineFromOnboard">Offline Hazırla</button></div></div></div>
+<nav class="bottom"><div class="bottominner">
+  <button class="navbtn active" data-nav="home"><i>⌂</i><span>Ana</span></button>
+  <button class="navbtn" data-nav="adult"><i>Y</i><span>Yetişkin</span></button>
+  <button class="navbtn" data-nav="pediatric"><i>P</i><span>Pediatrik</span></button>
+  <button class="navbtn" data-nav="favorites"><i>★</i><span>Favoriler</span></button>
+  <button class="navbtn" data-nav="patient"><i>+</i><span>Hasta Kaydı</span></button>
+  <button class="navbtn" data-nav="dose"><i>Σ</i><span>Doz Hesaplama</span></button>
+</div></nav>
+
+<script src="drug-info.js"></script>
+<script src="privacy.js"></script>
+<script src="data.js"></script>
+<script src="clinical-data-v070.js"></script>
+<script src="app.js"></script>
+<script src="master-logic.js"></script>
+<script src="v090-tools.js"></script>
+<script src="v091-tools.js"></script>
+<script src="master-tools.js"></script>
+<script src="services.js"></script>
+</body></html>

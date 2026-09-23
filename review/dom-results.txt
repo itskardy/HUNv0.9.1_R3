@@ -1,0 +1,1 @@
+v0.9.1: Eski linkedom DOM testi bağımlılık gerektirdiği için ana test zincirinden çıkarıldı. Yerine tests_v091.py 57/57 statik/yapısal/veri bütünlüğü kontrolü geçti. Gerçek Chromium runtime testi ortam politikası nedeniyle ERR_BLOCKED_BY_ADMINISTRATOR ile engellendi.

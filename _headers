@@ -1,0 +1,17 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+
+/index.html
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache
+
+/version.json
+  Cache-Control: no-cache
+
+/offline-manifest.json
+  Cache-Control: no-cache

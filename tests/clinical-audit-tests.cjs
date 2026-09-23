@@ -1,0 +1,30 @@
+const assert=require('assert');
+const fs=require('fs'),vm=require('vm'); global.window=global;
+function load(path){vm.runInThisContext(fs.readFileSync(path,'utf8'),{filename:path});}
+load('../master-logic.js');load('../clinical-data-v070.js');load('../drug-info.js');
+const ecg=global.HUNMasterLogic.ecg;
+let r=ecg({ecgGroup:'child',ecgDirectRate:'230',ecgAgeYears:'0.5',ecgSpeed:'25',ecgRegular:'yes',ecgPVisible:'no',st:{}});
+assert(r.codes.includes('SB-ASH-Ç-11'));assert(r.summary.includes('>220'));
+r=ecg({ecgGroup:'child',ecgDirectRate:'190',ecgAgeYears:'5',ecgSpeed:'25',ecgRegular:'yes',ecgPVisible:'no',st:{}});
+assert(r.codes.includes('SB-ASH-Ç-11'));assert(r.summary.includes('>180'));
+r=ecg({ecgGroup:'child',ecgDirectRate:'170',ecgAgeYears:'5',ecgSpeed:'25',ecgRegular:'no',ecgPVisible:'yes',st:{}});
+assert(r.summary.includes('sinüs taşikardisi lehine'));
+r=ecg({ecgGroup:'child',ecgDirectRate:'50',ecgAgeYears:'5',ecgPoorPerfusion:true,ecgDespiteOxygen:true,ecgSpeed:'25',st:{}});
+assert(r.codes.includes('SB-ASH-Ç-10'));assert(!r.codes.includes('SB-ASH-Y-08'));
+r=ecg({ecgGroup:'child',ecgDirectRate:'120',ecgAgeYears:'5',ecgSpeed:'25',ecgAcs:'yes',st:{II:'elevation',III:'elevation'}});
+assert(!r.codes.includes('SB-ASH-Y-06'));assert(r.summary.includes('yetişkin AKS algoritmasına otomatik yönlendirme yapılmadı'));
+r=ecg({ecgGroup:'child',ecgDirectRate:'190',ecgAgeYears:'5',ecgSpeed:'25',ecgQrsBoxes:'3',st:{}});
+assert.strictEqual(r.width,'wide');
+r=ecg({ecgGroup:'child',ecgDirectRate:'190',ecgAgeYears:'1',ecgSpeed:'25',st:{}});
+assert(r.summary.includes('tam 1 yaşta'));
+const c=global.HUN_CLINICAL_V070;
+assert.strictEqual(c.doseRules.length,147);
+assert(!c.doseRules.some(x=>x.id==='rule-012'));
+assert(!('SB-ASH-Y-02' in c.relatedAlgorithms));
+assert(!('SB-ASH-Ç-02' in c.relatedAlgorithms));
+assert(!('SB-ASH-Y-26' in c.relatedAlgorithms));
+assert(!('SB-ASH-Ç-25' in c.relatedAlgorithms));
+const rule66=c.doseRules.find(x=>x.id==='rule-066');assert(rule66&&!rule66.route);
+const entries=global.HUNDrugInfo.entries;assert.strictEqual(Object.keys(entries).length,34);
+for(const [id,e] of Object.entries(entries)){assert(e.ingredient, id);assert(e.mechanism,id);assert(e.indications,id);assert(e.caution,id);assert(Array.isArray(e.products)&&e.products.length,id);assert(Array.isArray(e.sources)&&e.sources.length,id);}
+console.log('PASS clinical audit regressions: pediatric EKG, 147 canonical rules, ambiguous links removed, 34 enriched drug cards');

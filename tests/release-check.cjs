@@ -1,0 +1,1 @@
+const g=require('../review/release-gates.json');const pending=Object.entries(g).filter(([,v])=>!v.passed);if(pending.length){console.error('FINAL YAYIN ENGELLI: '+pending.map(([id])=>id).join(', '));process.exitCode=1;}else console.log('All release gates passed');

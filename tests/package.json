@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "python3 ../tests_v091.py && node sw-tests.cjs && node security-tests.cjs && node feedback-tests.cjs && node clinical-audit-tests.cjs && node print-regression-tests.cjs"
+  }
+}

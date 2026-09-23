@@ -1,0 +1,9 @@
+Health Unit Navigator v0.9.1 — geliştirme / test paketi
+
+Bu ZIP, v0.9.0 geliştirme kontrol noktasının üzerine HUN_v0.9.1_MASTER_BACKLOG.md kapsamı uygulanarak oluşturulmuştur.
+KLINIK FINAL YAYIN ONAYI DEGILDIR. EKG bölümü özellikle YAPIM AŞAMASINDA uyarısını korur.
+
+Kaynak backlog: docs/HUN_v0.9.1_MASTER_BACKLOG.md
+Yayın kapıları: docs/RELEASE_GATES.md
+
+GitHub / Cloudflare Pages için ZIP içeriğini repo köküne çıkarın; index.html kökte kalmalıdır.

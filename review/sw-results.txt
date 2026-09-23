@@ -1,0 +1,3 @@
+PASS service worker install, update gate, scoped cleanup
+PASS offline navigation fallback and missing JS is never replaced by HTML
+PASS explicit update activation

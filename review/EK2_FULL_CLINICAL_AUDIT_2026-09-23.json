@@ -1,0 +1,4464 @@
+{
+  "auditDate": "2026-09-23",
+  "source": "EK-2.pdf",
+  "historicalDoseRowsReviewed": 148,
+  "activeDoseRules": 147,
+  "retiredDuplicateRules": [
+    "rule-012"
+  ],
+  "doseRowsVerified": 148,
+  "navigationEdgesActive": 100,
+  "navigationEdgesVerified": 100,
+  "ambiguousNavigationRemoved": [
+    "SB-ASH-Y-02 → SB-ASH-Y-01",
+    "SB-ASH-Ç-02 → SB-ASH-Ç-01",
+    "SB-ASH-Y-26 → SB-ASH-Y-22",
+    "SB-ASH-Ç-25 → SB-ASH-Ç-21"
+  ],
+  "sourceCorrection": [
+    "rule-066: Anafilaksi sayfasındaki salbutamol 2,5–5 mg satırında uygulama yolu açık yazılmadığı için Nebül otomatik yolu kaldırıldı."
+  ],
+  "doseAudit": [
+    {
+      "id": "rule-001",
+      "code": "SB-ASH-Y-04",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        11
+      ],
+      "doseText": "2,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla en fazla 3 kez",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-002",
+      "code": "SB-ASH-Y-04",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        11
+      ],
+      "doseText": "4–8 puf",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4–8 puf",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-003",
+      "code": "SB-ASH-Y-04",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        11
+      ],
+      "doseText": "2,5–5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5–5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-004",
+      "code": "SB-ASH-Y-04",
+      "drugId": "drug-ipratropium-bromur",
+      "sourcePages": [
+        11
+      ],
+      "doseText": "500 mcg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500 mcg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla en fazla 3 kez",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-005",
+      "code": "SB-ASH-Y-04",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        11
+      ],
+      "doseText": "40 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "40 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-006",
+      "code": "SB-ASH-Y-05",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        13
+      ],
+      "doseText": "4–8 puf",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4–8 puf",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-007",
+      "code": "SB-ASH-Y-05",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        13
+      ],
+      "doseText": "2,5–5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5–5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-008",
+      "code": "SB-ASH-Y-05",
+      "drugId": "drug-ipratropium-bromur",
+      "sourcePages": [
+        13
+      ],
+      "doseText": "500 mcg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500 mcg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla, maksimum 3 kez",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-009",
+      "code": "SB-ASH-Y-05",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        13
+      ],
+      "doseText": "40 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "40 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-010",
+      "code": "SB-ASH-Y-05",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        13
+      ],
+      "doseText": "1–2 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "20–30 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "%0,9 NaCl içinde uygulanabilir.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-011",
+      "code": "SB-ASH-Y-06",
+      "drugId": "drug-asetilsalisilik-asit",
+      "sourcePages": [
+        15
+      ],
+      "doseText": "160–325 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "160–325 mg",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Alerji ve aktif kanama durumlarında kontrendike; günlük aspirin alınmış olsa bile kaynak yükleme dozunu önerir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-012",
+      "code": "SB-ASH-Y-06",
+      "drugId": "drug-asetilsalisilik-asit",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "doseText": "160–325 mg",
+      "verified": true,
+      "status": "retired-duplicate",
+      "note": "Historical duplicate Aspirin/ASA alias row. Canonical active rule is rule-011; no second active dose rule is retained."
+    },
+    {
+      "id": "rule-013",
+      "code": "SB-ASH-Y-06",
+      "drugId": "drug-isosorbid-dinitrat",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Ağrı sürerse 3–5 dk arayla; toplam 3 doz",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Hipotansiyon, sağ ventrikül MI ve bradikardide kontrendike; sildenafil/vardenafil/tadalafil kullanımı varsa kullanma.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-014",
+      "code": "SB-ASH-Y-06",
+      "drugId": "drug-fentanil",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "doseText": "1 mcg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mcg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-015",
+      "code": "SB-ASH-Y-07",
+      "drugId": "drug-atropin",
+      "sourcePages": [
+        17
+      ],
+      "doseText": "1 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum toplam doz 3 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-016",
+      "code": "SB-ASH-Y-07",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "doseText": "2–10 mcg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2–10 mcg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "250 ml izotonik veya dekstroz + 1 mg/1 ml adrenalin → 4 mcg/ml",
+          "numeric_missing": []
+        },
+        {
+          "value": "500 ml izotonik veya dekstroz + 1 mg/1 ml adrenalin → 2 mcg/ml",
+          "numeric_missing": []
+        },
+        {
+          "value": "1000 ml izotonik veya dekstroz + 1 mg/1 ml adrenalin → 1 mcg/ml",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-017",
+      "code": "SB-ASH-Y-07",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "doseText": "5–20 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–20 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Pratik başlangıç: 500 ml %0,9 NaCl içine 100 mg dopamin (kaynakta ampul 200 mg). 5 mcg/kg/dk başlangıç için yaklaşık hastanın kilosunun yarısı kadar damla/dk.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-018",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-fentanil",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "1 mcg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mcg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-019",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "0,1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-020",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "300 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "300 mg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-021",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "150 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "150 mg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "%5 dekstroz ile.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-022",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "2 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-023",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-adenozin",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "6 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "6 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Başarısızsa 2. doz 12 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Hemen devamında en az 20 ml %0,9 NaCl IV bolus.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-024",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-adenozin",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "12 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "12 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "İlk dozun devamında kullanılan %0,9 NaCl bolus uygulama bilgisi kaynakta yer alır.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-025",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-metoprolol",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3 kez tekrarlanabilir",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-026",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-diltiazem",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "0,25 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,25 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-027",
+      "code": "SB-ASH-Y-08",
+      "drugId": "drug-diltiazem",
+      "sourcePages": [
+        18
+      ],
+      "doseText": "0,35 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,35 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-028",
+      "code": "SB-ASH-Y-10",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        21
+      ],
+      "doseText": "1 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-029",
+      "code": "SB-ASH-Y-11",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        23
+      ],
+      "doseText": "1 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-030",
+      "code": "SB-ASH-Y-11",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        23
+      ],
+      "doseText": "300 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "300 mg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "2–3 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "20 ml %5 dekstroz içinde.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-031",
+      "code": "SB-ASH-Y-11",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        23
+      ],
+      "doseText": "150 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "150 mg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "2–3 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "10 ml %5 dekstroz içinde.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-032",
+      "code": "SB-ASH-Y-11",
+      "drugId": "drug-lidokain",
+      "sourcePages": [
+        23
+      ],
+      "doseText": "1–1,5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–1,5 mg/kg",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%2",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-033",
+      "code": "SB-ASH-Y-11",
+      "drugId": "drug-lidokain",
+      "sourcePages": [
+        23
+      ],
+      "doseText": "0,5–0,75 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,5–0,75 mg/kg",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%2",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-034",
+      "code": "SB-ASH-Y-12",
+      "drugId": "drug-lidokain",
+      "sourcePages": [
+        24
+      ],
+      "doseText": "1–1,5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–1,5 mg/kg",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%2",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-035",
+      "code": "SB-ASH-Y-12",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        24
+      ],
+      "doseText": "150 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "150 mg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "%5 dekstroz ile.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-036",
+      "code": "SB-ASH-Y-12",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        24
+      ],
+      "doseText": "2–10 mcg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2–10 mcg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-037",
+      "code": "SB-ASH-Y-12",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        24
+      ],
+      "doseText": "5–20 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–20 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-038",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "500–1000 ml bolus",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500–1000 ml bolus",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-039",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "500–1000 ml bolus",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500–1000 ml bolus",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-040",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "250–500 ml hızlı infüzyon",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "250–500 ml hızlı infüzyon",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 1000 ml",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Sistolik KB 80–90 mmHg olacak şekilde titre edilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-041",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "250–500 ml hızlı infüzyon",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "250–500 ml hızlı infüzyon",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 1000 ml",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Sistolik KB 80–90 mmHg olacak şekilde titre edilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-042",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "2–10 mcg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2–10 mcg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-043",
+      "code": "SB-ASH-Y-13",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        25
+      ],
+      "doseText": "5–20 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–20 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-044",
+      "code": "SB-ASH-Y-14",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        27
+      ],
+      "doseText": "250 ml",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "250 ml",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-045",
+      "code": "SB-ASH-Y-14",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        27
+      ],
+      "doseText": "2–5 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2–5 mcg/kg/dk",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Kaynak: 20 mcg/kg/dk kadar çıkılabilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-046",
+      "code": "SB-ASH-Y-14",
+      "drugId": "drug-isosorbid-dinitrat",
+      "sourcePages": [
+        27
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 3 doz",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-047",
+      "code": "SB-ASH-Y-14",
+      "drugId": "drug-furosemid",
+      "sourcePages": [
+        27
+      ],
+      "doseText": "20–40 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20–40 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-048",
+      "code": "SB-ASH-Y-15",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        29
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Halen ajite ise sedasyon dozu tekrar edilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-049",
+      "code": "SB-ASH-Y-15",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        29
+      ],
+      "doseText": "2,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Halen ajite ise sedasyon dozu tekrar edilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-050",
+      "code": "SB-ASH-Y-15",
+      "drugId": "drug-diazepam",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Anahtar Bilgi: 20 dk sonra tekrar edilebilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-051",
+      "code": "SB-ASH-Y-17",
+      "drugId": "drug-dekstroz",
+      "sourcePages": [
+        32
+      ],
+      "doseText": "%10–%20 dekstroz solüsyonlarından 25 g glikoz",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "%10–%20 dekstroz solüsyonlarından 25 g glikoz",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Kaynakta kan şekeri <60 mg/dl ise 5–10 dk arayla dekstroz tekrarı ve gerektiğinde 15 dk arayla yeniden değerlendirme ifadeleri yer alır.",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "İki tekrar ifadesi kaynakta ayrı adımlarda yer alır; uygulamada orijinal şema kontrol edilmelidir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-052",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-diazepam",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "5 dk sonra nöbet sürerse aynı doz bir kez daha.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-053",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "5 dk sonra nöbet sürerse aynı doz bir kez daha.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-054",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "10 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "5 dk sonra nöbet sürerse aynı doz bir kez daha.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-055",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-fenitoin",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "20 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 mg/kg",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak algoritmada “infüzyon hızı en fazla 25 mg/kg/dk” ifadesi bulunur. Bu hız otomatik hesaplanmaz; orijinal şema esas alınır.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-056",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-valproik-asit",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "40 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "40 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-057",
+      "code": "SB-ASH-Y-19",
+      "drugId": "drug-levetirasetam",
+      "sourcePages": [
+        34
+      ],
+      "doseText": "60 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "60 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-058",
+      "code": "SB-ASH-Y-21",
+      "drugId": "drug-feniramin-maleat",
+      "sourcePages": [
+        36
+      ],
+      "doseText": "45,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "45,5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-059",
+      "code": "SB-ASH-Y-21",
+      "drugId": "drug-difenhidramin",
+      "sourcePages": [
+        36
+      ],
+      "doseText": "25–50 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "25–50 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-060",
+      "code": "SB-ASH-Y-21",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        36
+      ],
+      "doseText": "1–2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 125 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-061",
+      "code": "SB-ASH-Y-21",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        36
+      ],
+      "doseText": "500 ml bolus",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500 ml bolus",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-062",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "0,3–0,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,3–0,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Hipoperfüzyon sürüyorsa 5 dk içinde tekrar.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-063",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "1 mcg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mcg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-064",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-difenhidramin",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "25–50 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "25–50 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-065",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-feniramin-maleat",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "45,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "45,5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-066",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "2,5–5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5–5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-067",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "1–2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 125 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-068",
+      "code": "SB-ASH-Y-22",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        38
+      ],
+      "doseText": "500 ml bolus",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "500 ml bolus",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-069",
+      "code": "SB-ASH-Y-28",
+      "drugId": "drug-fentanil",
+      "sourcePages": [
+        51
+      ],
+      "doseText": "1 mcg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mcg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-070",
+      "code": "SB-ASH-Y-28",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        49,
+        51
+      ],
+      "doseText": "Nakil <1 saat: 500 ml; uzun nakilde kaynak Parkland saatlik başlangıç formülünü kullanır.",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "Nakil <1 saat: 500 ml; uzun nakilde kaynak Parkland saatlik başlangıç formülünü kullanır.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-071",
+      "code": "SB-ASH-Y-34",
+      "drugId": "drug-atropin",
+      "sourcePages": [
+        58,
+        59
+      ],
+      "doseText": "1 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 3 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-072",
+      "code": "SB-ASH-Y-34",
+      "drugId": "drug-kalsiyum-glukonat",
+      "sourcePages": [
+        58,
+        59
+      ],
+      "doseText": "3 ampul = 30 ml",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "3 ampul = 30 ml",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "100 ml %0,9 NaCl içinde.",
+          "numeric_missing": []
+        },
+        {
+          "value": "Anahtar Bilgi: 1 ampul 10 ml olarak ifade edilmiştir.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-073",
+      "code": "SB-ASH-Y-35",
+      "drugId": "drug-atropin",
+      "sourcePages": [
+        60,
+        61
+      ],
+      "doseText": "1–2 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Kaynak: maksimum doz bulunmamaktadır.",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Trakeobronşiyal sekresyonlar azalıncaya kadar 5 dk arayla",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-074",
+      "code": "SB-ASH-Y-35",
+      "drugId": "drug-atropin",
+      "sourcePages": [
+        60,
+        61
+      ],
+      "doseText": "2–5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2–5 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Kaynak: maksimum doz bulunmamaktadır.",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "IV yol açılana kadar / sekresyonlar azalıncaya kadar kaynak şemaya göre",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-075",
+      "code": "SB-ASH-Y-36",
+      "drugId": "drug-nalokson",
+      "sourcePages": [
+        62,
+        63
+      ],
+      "doseText": "0,4–2 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,4–2 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 10 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Algoritma: düzelme olmazsa 2–3 dk arayla; Anahtar Bilgi: istenen etki elde edilene kadar 0,1–0,4 mg tekrar",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Tekrar dozu ve aralığı algoritma ile Anahtar Bilgi metninde farklı ayrıntı düzeylerinde verilir; orijinal kaynak kontrol edilmelidir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-076",
+      "code": "SB-ASH-Y-36",
+      "drugId": "drug-nalokson",
+      "sourcePages": [
+        62,
+        63
+      ],
+      "doseText": "2 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2 mg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 10 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-077",
+      "code": "SB-ASH-Y-37",
+      "drugId": "drug-sodyum-bikarbonat-nahco3",
+      "sourcePages": [
+        64,
+        65
+      ],
+      "doseText": "1–2 mEq/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mEq/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-078",
+      "code": "SB-ASH-Y-39",
+      "drugId": "drug-kalsiyum-glukonat",
+      "sourcePages": [
+        70
+      ],
+      "doseText": "%10 solüsyondan 10–30 ml",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "%10 solüsyondan 10–30 ml",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "2–3 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-079",
+      "code": "SB-ASH-Y-39",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        69,
+        70
+      ],
+      "doseText": "Başlangıç 1000 ml/sa; toplam 3000–6000 ml (duruma göre değişebilir)",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "Başlangıç 1000 ml/sa; toplam 3000–6000 ml (duruma göre değişebilir)",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "Kurtarma >2 saat sürerse 500 ml/sa veya daha az",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Ringer Laktat gibi potasyum içeren sıvılar Crush Sendromunda kaynak Anahtar Bilgiye göre kullanılmamalıdır.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-080",
+      "code": "SB-ASH-Y-40",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        71,
+        72
+      ],
+      "doseText": "1–2,5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla hasta sakinleşinceye kadar",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-081",
+      "code": "SB-ASH-DY-01",
+      "drugId": "drug-karbetosin",
+      "sourcePages": [
+        76
+      ],
+      "doseText": "100 mcg/100 ml",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "100 mcg/100 ml",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "IV ise 1 dk’dan kısa olmayacak şekilde yavaş puşe",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak ifade aynen korunur; preparat konsantrasyonu yorumlanmaz.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-082",
+      "code": "SB-ASH-DY-01",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        76
+      ],
+      "doseText": "125 ml/saat",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "125 ml/saat",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-083",
+      "code": "SB-ASH-DY-02",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        77
+      ],
+      "doseText": "125 ml/saat",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "125 ml/saat",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-084",
+      "code": "SB-ASH-DY-01",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        76
+      ],
+      "doseText": "125 ml/saat",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "125 ml/saat",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-085",
+      "code": "SB-ASH-DY-02",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        77
+      ],
+      "doseText": "125 ml/saat",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "125 ml/saat",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-086",
+      "code": "SB-ASH-DY-03",
+      "drugId": "drug-karbetosin",
+      "sourcePages": [
+        78
+      ],
+      "doseText": "100 mcg/100 ml",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "100 mcg/100 ml",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "IV ise 1 dk’dan kısa olmayacak şekilde yavaş puşe",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak ifade aynen korunur; preparat konsantrasyonu yorumlanmaz.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-087",
+      "code": "SB-ASH-DY-03",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        78
+      ],
+      "doseText": "2000 ml’ye kadar",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2000 ml’ye kadar",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-088",
+      "code": "SB-ASH-DY-04",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        79
+      ],
+      "doseText": "4 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4 g",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Kaynak yükleme satırında maksimum 6 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "15–20 dk",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "“Maksimum 6 g” yalnız kaynakta yükleme satırı bağlamında gösterilir; idame dozuna toplam tedavi tavanı olarak uygulanmaz.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Hazır solüsyon: 100 ml içinde 4 g.",
+          "numeric_missing": []
+        },
+        {
+          "value": "Hazır solüsyon yoksa: 100 ml %0,9 NaCl içine 3 ampul %15 MgSO₄; 15–20 dk, yaklaşık 200 damla/dk.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-089",
+      "code": "SB-ASH-DY-04",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        79
+      ],
+      "doseText": "4 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "4 saatte",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "100 ml içinde 4 g hazır magnezyum solüsyonu.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-090",
+      "code": "SB-ASH-DY-04",
+      "drugId": "drug-nifedipin",
+      "sourcePages": [
+        79
+      ],
+      "doseText": "10 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk sonra TA yeniden değerlendirilir.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-091",
+      "code": "SB-ASH-DY-04",
+      "drugId": "drug-nifedipin",
+      "sourcePages": [
+        79
+      ],
+      "doseText": "20 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 mg",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "TA halen ≥160/110, hedefe ulaşılamamış ve yükselme eğilimi varsa.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-092",
+      "code": "SB-ASH-DY-05",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        80
+      ],
+      "doseText": "4 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4 g",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Kaynak yükleme satırında maksimum 6 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "15–20 dk",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "“Maks 6 g” toplam idame tavanı olarak yorumlanmaz.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Hazır: 100 ml içinde 4 g.",
+          "numeric_missing": []
+        },
+        {
+          "value": "Hazır solüsyon yoksa: 100 ml %0,9 NaCl içine 3 ampul %15 MgSO₄; 15–20 dk, yaklaşık 200 damla/dk.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-093",
+      "code": "SB-ASH-DY-05",
+      "drugId": "drug-magnezyum-sulfat",
+      "sourcePages": [
+        80
+      ],
+      "doseText": "4 g",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4 g",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "4 saatte",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "100 ml içinde 4 g hazır magnezyum solüsyonu.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-094",
+      "code": "SB-ASH-DY-05",
+      "drugId": "drug-diazepam",
+      "sourcePages": [
+        80
+      ],
+      "doseText": "5 mg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-095",
+      "code": "SB-ASH-DY-07",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        83
+      ],
+      "doseText": "0,02 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,02 mg/kg",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-096",
+      "code": "SB-ASH-Ç-04",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        90,
+        91
+      ],
+      "doseText": "4–8 puf; 5 yaş altı 2–6 puf",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "4–8 puf; 5 yaş altı 2–6 puf",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla toplam 3 uygulama (Anahtar Bilgi).",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Yaş <5 ise kaynak aralığı 2–6 puf; diğer çocuklarda 4–8 puf.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-097",
+      "code": "SB-ASH-Ç-04",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        90,
+        91
+      ],
+      "doseText": "0,15 mg/kg/doz",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,15 mg/kg/doz",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 5 mg",
+          "numeric_missing": []
+        },
+        "minText": {
+          "value": "Minimum 2,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla 3 kez",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-098",
+      "code": "SB-ASH-Ç-04",
+      "drugId": "drug-ipratropium-bromur",
+      "sourcePages": [
+        90,
+        91
+      ],
+      "doseText": "<20 kg: 250 mcg; ≥20 kg: 500 mcg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "<20 kg: 250 mcg; ≥20 kg: 500 mcg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla 3 doz",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-099",
+      "code": "SB-ASH-Ç-04",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        90,
+        91
+      ],
+      "doseText": "1–2 mg/kg/doz",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mg/kg/doz",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 60 mg/gün",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-100",
+      "code": "SB-ASH-Ç-06",
+      "drugId": "drug-deksametazon",
+      "sourcePages": [
+        94,
+        95
+      ],
+      "doseText": "0,15–0,6 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,15–0,6 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 16 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-101",
+      "code": "SB-ASH-Ç-06",
+      "drugId": "drug-deksametazon",
+      "sourcePages": [
+        95
+      ],
+      "doseText": "0,6 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,6 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 16 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-102",
+      "code": "SB-ASH-Ç-06",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        94,
+        95
+      ],
+      "doseText": "0,5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,5 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "10 kg üzerinde maksimum 5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Ağır atakta düzelme olmazsa tekrarlanır.",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/1000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-103",
+      "code": "SB-ASH-Ç-06",
+      "drugId": "drug-parasetamol",
+      "sourcePages": [
+        95
+      ],
+      "doseText": "15 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "15 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-104",
+      "code": "SB-ASH-Ç-07",
+      "drugId": "drug-parasetamol",
+      "sourcePages": [
+        97
+      ],
+      "doseText": "15 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "15 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-105",
+      "code": "SB-ASH-Ç-07",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        97
+      ],
+      "doseText": "20 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Toplam 60 ml/kg (üç yükleme)",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-106",
+      "code": "SB-ASH-Ç-07",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        97
+      ],
+      "doseText": "10 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Yenidoğanda en fazla iki yükleme; toplam 20 ml/kg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-107",
+      "code": "SB-ASH-Ç-07",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        97
+      ],
+      "doseText": "0,1–1 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1–1 mcg/kg/dk",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Rutin değildir; yalnız sıvı tedavisine yanıtsız şokta.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-108",
+      "code": "SB-ASH-Ç-07",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        97
+      ],
+      "doseText": "5–20 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–20 mcg/kg/dk",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "Rutin değildir; yalnız sıvı tedavisine yanıtsız şokta.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-109",
+      "code": "SB-ASH-Ç-08",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        99
+      ],
+      "doseText": "5–10 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–10 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Tekrarlarla toplam 20 ml/kg geçilmemelidir.",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "20–30 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-110",
+      "code": "SB-ASH-Ç-08",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        98,
+        99
+      ],
+      "doseText": "0,1–0,3 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1–0,3 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Pratik başlangıç: 500 ml %0,9 NaCl içine 1 mg adrenalin. 0,1 mcg/kg/dk başlangıç için dakikada çocuk/bebeğin kilosu kadar damla.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-111",
+      "code": "SB-ASH-Ç-08",
+      "drugId": "drug-furosemid",
+      "sourcePages": [
+        99
+      ],
+      "doseText": "1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-112",
+      "code": "SB-ASH-Ç-09",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        102
+      ],
+      "doseText": "20 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Toplam 60 ml/kg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-113",
+      "code": "SB-ASH-Ç-09",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        102
+      ],
+      "doseText": "10 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Yenidoğanda toplam 30 ml/kg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "5–10 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-114",
+      "code": "SB-ASH-Ç-09",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        101,
+        102
+      ],
+      "doseText": "0,1–0,3 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1–0,3 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Pratik başlangıç: 500 ml %0,9 NaCl içine 1 mg adrenalin; 0,1 mcg/kg/dk için yaklaşık kilo kadar damla/dk.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-115",
+      "code": "SB-ASH-Ç-09",
+      "drugId": "drug-dopamin",
+      "sourcePages": [
+        101,
+        102
+      ],
+      "doseText": "5–20 mcg/kg/dk",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–20 mcg/kg/dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Pratik başlangıç: 500 ml %0,9 NaCl içine 100 mg dopamin (kaynakta ampul 200 mg); 5 mcg/kg/dk için yaklaşık kilo/2 damla/dk.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-116",
+      "code": "SB-ASH-Ç-10",
+      "drugId": "drug-atropin",
+      "sourcePages": [
+        104
+      ],
+      "doseText": "0,02 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,02 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Çocukta maksimum tek doz 0,5 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-117",
+      "code": "SB-ASH-Ç-10",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        103,
+        104
+      ],
+      "doseText": "0,01 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,01 mg/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "1 mg/1 ml (1/1000) + 9 ml SF → 10 ml (1/10.000)",
+          "numeric_missing": []
+        },
+        {
+          "value": "0,5 mg/1 ml (1/2000) + 4 ml SF → 5 ml (1/10.000)",
+          "numeric_missing": []
+        },
+        {
+          "value": "0,25 mg/1 ml (1/4000) + 1,5 ml SF → 2,5 ml (1/10.000)",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-118",
+      "code": "SB-ASH-Ç-11",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        106
+      ],
+      "doseText": "0,1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-119",
+      "code": "SB-ASH-Ç-11",
+      "drugId": "drug-adenozin",
+      "sourcePages": [
+        105,
+        106
+      ],
+      "doseText": "0,1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 6 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Adenozin verilir verilmez 5 ml normal izotonik hızlı verilir.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-120",
+      "code": "SB-ASH-Ç-11",
+      "drugId": "drug-adenozin",
+      "sourcePages": [
+        105,
+        106
+      ],
+      "doseText": "0,2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 12 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Adenozin verilir verilmez 5 ml normal izotonik hızlı verilir.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-121",
+      "code": "SB-ASH-Ç-11",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        106
+      ],
+      "doseText": "5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg/kg",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "20–60 dk",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "İlk tercih %5 dekstroz içinde.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-122",
+      "code": "SB-ASH-Ç-13",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        110
+      ],
+      "doseText": "0,01 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,01 mg/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-123",
+      "code": "SB-ASH-Ç-13",
+      "drugId": "drug-amiodaron",
+      "sourcePages": [
+        110
+      ],
+      "doseText": "5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 mg/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Tekrarlayan / dirençli VF/VT’de 5. defibrilasyon sonrası 5 mg/kg tekrar.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "%5 dekstroz içine.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-124",
+      "code": "SB-ASH-Ç-13",
+      "drugId": "drug-lidokain",
+      "sourcePages": [
+        110
+      ],
+      "doseText": "1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-125",
+      "code": "SB-ASH-Ç-14",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        111
+      ],
+      "doseText": "0,01 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,01 mg/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "3–5 dk arayla",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/10.000",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-126",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-diazepam",
+      "sourcePages": [
+        116,
+        117
+      ],
+      "doseText": "0,2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "<5 yaş: 5 mg; ≥5 yaş: 10 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Algoritmada 5. dk’da nöbet sürerse aynı dozdan 1 kez tekrar.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-127",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-diazepam",
+      "sourcePages": [
+        116
+      ],
+      "doseText": "0,3–0,5 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,3–0,5 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "<2 yaş: 5 mg; ≥2 yaş: 10 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-128",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        116,
+        117
+      ],
+      "doseText": "0,2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "<5 yaş: 6 mg; ≥5 yaş: 10 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Algoritmada 5. dk’da nöbet sürerse aynı dozdan 1 kez tekrar.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-129",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-midazolam",
+      "sourcePages": [
+        116
+      ],
+      "doseText": "0,2–0,3 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,2–0,3 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "<6 ay: 2,5 mg; 6 ay–<5 yaş: 5 mg; ≥5 yaş: 10 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-130",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-fenitoin",
+      "sourcePages": [
+        116,
+        117
+      ],
+      "doseText": "20 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 mg/kg",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak içi hız uyuşmazlığı: algoritma “en fazla 25 mg/kg/dk”, Anahtar Bilgi örneği “1 mg/kg/dk” üzerinden ilerler. Otomatik infüzyon hızı hesaplanmaz.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [
+        {
+          "value": "Anahtar Bilgi örneği (20 kg çocuk): 400 mg fenitoin = 8 ml; 100 ml SF içine eklenir; örnek mayi konsantrasyonu 1 ml’de 4 mg. Bu hazırlama örneği başka kilolara otomatik genellenmez.",
+          "numeric_missing": []
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "rule-131",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-valproik-asit",
+      "sourcePages": [
+        117
+      ],
+      "doseText": "30 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "30 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-132",
+      "code": "SB-ASH-Ç-17",
+      "drugId": "drug-levetirasetam",
+      "sourcePages": [
+        117
+      ],
+      "doseText": "60 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "60 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-133",
+      "code": "SB-ASH-Ç-18",
+      "drugId": "drug-parasetamol",
+      "sourcePages": [
+        118,
+        119
+      ],
+      "doseText": "10–15 mg/kg/doz",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10–15 mg/kg/doz",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 500 mg/doz",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "4–6 saatte bir",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-134",
+      "code": "SB-ASH-Ç-18",
+      "drugId": "drug-ibuprofen",
+      "sourcePages": [
+        118,
+        119
+      ],
+      "doseText": "5–10 mg/kg/doz",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5–10 mg/kg/doz",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 400 mg/doz",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "6 saatte bir",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "12 ayın altında verilmez.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-135",
+      "code": "SB-ASH-Ç-19",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        120
+      ],
+      "doseText": "10 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "10 ml/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 500 ml",
+          "numeric_missing": []
+        },
+        "duration": {
+          "value": "1 saatte",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-136",
+      "code": "SB-ASH-Ç-20",
+      "drugId": "drug-dekstroz",
+      "sourcePages": [
+        121,
+        122
+      ],
+      "doseText": "5 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "5 ml/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Kan şekeri tekrar düşükse algoritmada aynı 5 ml/kg doz tekrar edilir.",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%10",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-137",
+      "code": "SB-ASH-Ç-20",
+      "drugId": "drug-dekstroz",
+      "sourcePages": [
+        121
+      ],
+      "doseText": "2,5 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5 ml/kg",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%20",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak: periferik damar yolundan verilmez.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-138",
+      "code": "SB-ASH-Ç-20",
+      "drugId": "drug-dekstroz",
+      "sourcePages": [
+        122
+      ],
+      "doseText": "2,5–5 ml/kg/saat",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "2,5–5 ml/kg/saat",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "%5",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-139",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "20 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 ml/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-140",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-difenhidramin",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-141",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-feniramin-maleat",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 50 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-142",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-metil-prednizolon",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "1–2 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1–2 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum 125 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-143",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-salbutamol",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "0,15 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,15 mg/kg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "20 dk arayla 3 kez",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-144",
+      "code": "SB-ASH-Ç-21",
+      "drugId": "drug-adrenalin",
+      "sourcePages": [
+        124
+      ],
+      "doseText": "0,01 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,01 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "12 yaş altı maks 0,3 mg; 12 yaş üstü maks 0,5 mg",
+          "numeric_missing": []
+        },
+        "repeat": {
+          "value": "Yeterli cevap yoksa 5–15 dk arayla toplam 3 doza kadar",
+          "numeric_missing": []
+        },
+        "concentration": {
+          "value": "1/1000",
+          "numeric_missing": []
+        },
+        "conditions": {
+          "value": "IM uygulama için uyluk bölgesi kullanılmalı.",
+          "numeric_missing": []
+        },
+        "warning": {
+          "value": "Kaynak “12 yaş altı” ve “12 yaş üstü” diyor; tam 12 yaş için otomatik sonuç verilmez.",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-145",
+      "code": "SB-ASH-Ç-22",
+      "drugId": "drug-0-9-nacl",
+      "sourcePages": [
+        126
+      ],
+      "doseText": "20 ml/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "20 ml/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-146",
+      "code": "SB-ASH-Ç-27",
+      "drugId": "drug-fentanil",
+      "sourcePages": [
+        136
+      ],
+      "doseText": "1 mcg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "1 mcg/kg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-147",
+      "code": "SB-ASH-Ç-27",
+      "drugId": "drug-ringer-laktat",
+      "sourcePages": [
+        134,
+        136
+      ],
+      "doseText": "(3 ml × yanmış VYA% × kg) / 16",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "(3 ml × yanmış VYA% × kg) / 16",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    },
+    {
+      "id": "rule-148",
+      "code": "SB-ASH-Ç-28",
+      "drugId": "drug-nalokson",
+      "sourcePages": [
+        137
+      ],
+      "doseText": "0,1 mg/kg",
+      "source_page_scope_ok": true,
+      "fields": {
+        "doseText": {
+          "value": "0,1 mg/kg",
+          "numeric_missing": []
+        },
+        "maxText": {
+          "value": "Maksimum tek doz 2 mg; toplam maksimum 10 mg",
+          "numeric_missing": []
+        }
+      },
+      "preparation": [],
+      "verified": true
+    }
+  ],
+  "navigationAudit": [
+    {
+      "source": "SB-ASH-Y-01",
+      "sourceTitle": "Olay Yeri Yönetimi",
+      "page": 6,
+      "target": "SB-ASH-Y-02",
+      "targetTitle": "Acil Olgu Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-03",
+      "sourceTitle": "Hava Yolu Tıkanıklıkları",
+      "page": 9,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-09",
+      "sourceTitle": "Arrest Yönetimi",
+      "page": 19,
+      "target": "SB-ASH-Y-11",
+      "targetTitle": "Şoklanır Ritim Yönetimi - VF / Nabızsız VT",
+      "title_match_score": 0.67,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-09",
+      "sourceTitle": "Arrest Yönetimi",
+      "page": 19,
+      "target": "SB-ASH-Y-10",
+      "targetTitle": "Şoklanamaz Ritim Yönetimi - Asistoli / NEA",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-10",
+      "sourceTitle": "Şoklanamaz Ritim Yönetimi - Asistoli / NEA",
+      "page": 21,
+      "target": "SB-ASH-Y-12",
+      "targetTitle": "Resüsitasyon Sonrası Bakım",
+      "title_match_score": 0.67,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-10",
+      "sourceTitle": "Şoklanamaz Ritim Yönetimi - Asistoli / NEA",
+      "page": 21,
+      "target": "SB-ASH-Y-11",
+      "targetTitle": "Şoklanır Ritim Yönetimi - VF / Nabızsız VT",
+      "title_match_score": 0.67,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-10",
+      "sourceTitle": "Şoklanamaz Ritim Yönetimi - Asistoli / NEA",
+      "page": 21,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-11",
+      "sourceTitle": "Şoklanır Ritim Yönetimi - VF / Nabızsız VT",
+      "page": 23,
+      "target": "SB-ASH-Y-12",
+      "targetTitle": "Resüsitasyon Sonrası Bakım",
+      "title_match_score": 0.67,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-11",
+      "sourceTitle": "Şoklanır Ritim Yönetimi - VF / Nabızsız VT",
+      "page": 23,
+      "target": "SB-ASH-Y-10",
+      "targetTitle": "Şoklanamaz Ritim Yönetimi - Asistoli / NEA",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-11",
+      "sourceTitle": "Şoklanır Ritim Yönetimi - VF / Nabızsız VT",
+      "page": 23,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-12",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım",
+      "page": 24,
+      "target": "SB-ASH-Y-07",
+      "targetTitle": "Bradikardi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Y-08": "Kaynak “TAŞİARİTMİ”; uygulamadaki yetişkin karşılığı “Nabızlı Taşikardi”."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-12",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım",
+      "page": 24,
+      "target": "SB-ASH-Y-08",
+      "targetTitle": "Nabızlı Taşikardi",
+      "title_match_score": 0.0,
+      "navigation_note": {
+        "SB-ASH-Y-08": "Kaynak “TAŞİARİTMİ”; uygulamadaki yetişkin karşılığı “Nabızlı Taşikardi”."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-12",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım",
+      "page": 24,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Y-08": "Kaynak “TAŞİARİTMİ”; uygulamadaki yetişkin karşılığı “Nabızlı Taşikardi”."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-12",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım",
+      "page": 24,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": {
+        "SB-ASH-Y-08": "Kaynak “TAŞİARİTMİ”; uygulamadaki yetişkin karşılığı “Nabızlı Taşikardi”."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-15",
+      "sourceTitle": "Ajite Hastaya Yaklaşım",
+      "page": 29,
+      "target": "SB-ASH-Y-38",
+      "targetTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-16",
+      "sourceTitle": "Bilinç Değişikliği",
+      "page": 31,
+      "target": "SB-ASH-Y-38",
+      "targetTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-16",
+      "sourceTitle": "Bilinç Değişikliği",
+      "page": 31,
+      "target": "SB-ASH-Y-18",
+      "targetTitle": "İnme / SVO",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-16",
+      "sourceTitle": "Bilinç Değişikliği",
+      "page": 31,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-16",
+      "sourceTitle": "Bilinç Değişikliği",
+      "page": 31,
+      "target": "SB-ASH-Y-31",
+      "targetTitle": "Zehirlenmelere Genel Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-16",
+      "sourceTitle": "Bilinç Değişikliği",
+      "page": 31,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-17",
+      "sourceTitle": "Diyabetik Aciller",
+      "page": 32,
+      "target": "SB-ASH-Y-13",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-18",
+      "sourceTitle": "İnme / SVO",
+      "page": 33,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-19",
+      "sourceTitle": "Nöbet / Konvülziyon",
+      "page": 34,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-20",
+      "sourceTitle": "Vertigo",
+      "page": 35,
+      "target": "SB-ASH-Y-18",
+      "targetTitle": "İnme / SVO",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-21",
+      "sourceTitle": "Alerjik Reaksiyon",
+      "page": 36,
+      "target": "SB-ASH-Y-22",
+      "targetTitle": "Anafilaksi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-24",
+      "sourceTitle": "Hipotermi",
+      "page": 42,
+      "target": "SB-ASH-Y-25",
+      "targetTitle": "Hipotermide Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-25",
+      "sourceTitle": "Hipotermide Arrest Yönetimi",
+      "page": 44,
+      "target": "SB-ASH-Y-24",
+      "targetTitle": "Hipotermi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-25",
+      "sourceTitle": "Hipotermide Arrest Yönetimi",
+      "page": 44,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-27",
+      "sourceTitle": "Suda Boğulma",
+      "page": 48,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-28",
+      "sourceTitle": "Termal Yanık",
+      "page": 51,
+      "target": "SB-ASH-Y-13",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-29",
+      "sourceTitle": "Elektrik Yanıkları",
+      "page": 52,
+      "target": "SB-ASH-Y-28",
+      "targetTitle": "Termal Yanık",
+      "title_match_score": 0.0,
+      "navigation_note": "EK-2 Elektrik Yanıkları sayfasında “TERMAL YANIK ALGORİTMASINA GİT” açık hedefi vardır.",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-30",
+      "sourceTitle": "Kimyasal Yanıklar",
+      "page": 53,
+      "target": "SB-ASH-Y-28",
+      "targetTitle": "Termal Yanık",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-32",
+      "sourceTitle": "Yüksek Doz İlaç Alımı",
+      "page": 56,
+      "target": "SB-ASH-Y-35",
+      "targetTitle": "Kolinerjik Ajanlarla Zehirlenme",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-32",
+      "sourceTitle": "Yüksek Doz İlaç Alımı",
+      "page": 56,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-32",
+      "sourceTitle": "Yüksek Doz İlaç Alımı",
+      "page": 56,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-32",
+      "sourceTitle": "Yüksek Doz İlaç Alımı",
+      "page": 56,
+      "target": "SB-ASH-Y-36",
+      "targetTitle": "Narkotik / Opioid Zehirlenmeleri",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-32",
+      "sourceTitle": "Yüksek Doz İlaç Alımı",
+      "page": 56,
+      "target": "SB-ASH-Y-24",
+      "targetTitle": "Hipotermi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-33",
+      "sourceTitle": "Karbonmonoksit Zehirlenmesi",
+      "page": 57,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-34",
+      "sourceTitle": "Kalsiyum Kanal Blokerleri / Beta Blokerlerle Zehirlenme",
+      "page": 59,
+      "target": "SB-ASH-Y-31",
+      "targetTitle": "Zehirlenmelere Genel Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-34",
+      "sourceTitle": "Kalsiyum Kanal Blokerleri / Beta Blokerlerle Zehirlenme",
+      "page": 59,
+      "target": "SB-ASH-Y-07",
+      "targetTitle": "Bradikardi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-34",
+      "sourceTitle": "Kalsiyum Kanal Blokerleri / Beta Blokerlerle Zehirlenme",
+      "page": 59,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-35",
+      "sourceTitle": "Kolinerjik Ajanlarla Zehirlenme",
+      "page": 61,
+      "target": "SB-ASH-Y-31",
+      "targetTitle": "Zehirlenmelere Genel Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-36",
+      "sourceTitle": "Narkotik / Opioid Zehirlenmeleri",
+      "page": 63,
+      "target": "SB-ASH-Y-31",
+      "targetTitle": "Zehirlenmelere Genel Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-36",
+      "sourceTitle": "Narkotik / Opioid Zehirlenmeleri",
+      "page": 63,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-37",
+      "sourceTitle": "Trisiklik Antidepresan Zehirlenmesi",
+      "page": 65,
+      "target": "SB-ASH-Y-31",
+      "targetTitle": "Zehirlenmelere Genel Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-37",
+      "sourceTitle": "Trisiklik Antidepresan Zehirlenmesi",
+      "page": 65,
+      "target": "SB-ASH-Y-23",
+      "targetTitle": "Hipertermi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-37",
+      "sourceTitle": "Trisiklik Antidepresan Zehirlenmesi",
+      "page": 65,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-38",
+      "sourceTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "page": 68,
+      "target": "SB-ASH-Y-09",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-38",
+      "sourceTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "page": 68,
+      "target": "SB-ASH-Y-13",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-38",
+      "sourceTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "page": 68,
+      "target": "SB-ASH-Y-40",
+      "targetTitle": "Kafa Travmalı Hastaya Yaklaşım",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-40",
+      "sourceTitle": "Kafa Travmalı Hastaya Yaklaşım",
+      "page": 72,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Y-40",
+      "sourceTitle": "Kafa Travmalı Hastaya Yaklaşım",
+      "page": 72,
+      "target": "SB-ASH-Y-19",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-01",
+      "sourceTitle": "Normal Doğum",
+      "page": 76,
+      "target": "SB-ASH-DY-06",
+      "targetTitle": "Normal Yenidoğan Bakımı",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-02",
+      "sourceTitle": "Doğum Komplikasyonları",
+      "page": 77,
+      "target": "SB-ASH-DY-06",
+      "targetTitle": "Normal Yenidoğan Bakımı",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-02",
+      "sourceTitle": "Doğum Komplikasyonları",
+      "page": 77,
+      "target": "SB-ASH-DY-07",
+      "targetTitle": "Yenidoğan Canlandırması",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-05",
+      "sourceTitle": "Üçüncü Trimestr Nöbetler - Eklampsi",
+      "page": 80,
+      "target": "SB-ASH-DY-04",
+      "targetTitle": "Preeklampsi",
+      "title_match_score": 0.0,
+      "navigation_note": {
+        "SB-ASH-DY-04": "Kaynak “Gebelikte Akut Hipertansiyon Yönetimi”; uygulamadaki karşılığı “Preeklampsi”.",
+        "SB-ASH-Y-17": "Eklampsi dalındaki hasta annedir; Diyabetik Aciller yetişkin bölümüne yönlenir."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-05",
+      "sourceTitle": "Üçüncü Trimestr Nöbetler - Eklampsi",
+      "page": 80,
+      "target": "SB-ASH-Y-17",
+      "targetTitle": "Diyabetik Aciller",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-DY-04": "Kaynak “Gebelikte Akut Hipertansiyon Yönetimi”; uygulamadaki karşılığı “Preeklampsi”.",
+        "SB-ASH-Y-17": "Eklampsi dalındaki hasta annedir; Diyabetik Aciller yetişkin bölümüne yönlenir."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-06",
+      "sourceTitle": "Normal Yenidoğan Bakımı",
+      "page": 81,
+      "target": "SB-ASH-DY-07",
+      "targetTitle": "Yenidoğan Canlandırması",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-07",
+      "sourceTitle": "Yenidoğan Canlandırması",
+      "page": 83,
+      "target": "SB-ASH-DY-06",
+      "targetTitle": "Normal Yenidoğan Bakımı",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-12": "Arrest dalındaki hasta yenidoğandır; pediatrik Arrest Yönetimi kullanılır."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-DY-07",
+      "sourceTitle": "Yenidoğan Canlandırması",
+      "page": 83,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-12": "Arrest dalındaki hasta yenidoğandır; pediatrik Arrest Yönetimi kullanılır."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-01",
+      "sourceTitle": "Olay Yeri Yönetimi",
+      "page": 85,
+      "target": "SB-ASH-Ç-02",
+      "targetTitle": "Acil Olgu Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-03",
+      "sourceTitle": "Yabancı Cisme Bağlı Hava Yolu Tıkanıklığı",
+      "page": 89,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-05",
+      "sourceTitle": "Epiglottit",
+      "page": 92,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-12",
+      "sourceTitle": "Arrest Yönetimi",
+      "page": 108,
+      "target": "SB-ASH-Ç-14",
+      "targetTitle": "Şoklanamaz Ritim - Asistoli / NEA",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-12",
+      "sourceTitle": "Arrest Yönetimi",
+      "page": 108,
+      "target": "SB-ASH-Ç-15",
+      "targetTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "title_match_score": 0.8,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-12",
+      "sourceTitle": "Arrest Yönetimi",
+      "page": 108,
+      "target": "SB-ASH-Ç-13",
+      "targetTitle": "Şoklanır Ritim - VF / Nabızsız VT",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-13",
+      "sourceTitle": "Şoklanır Ritim - VF / Nabızsız VT",
+      "page": 110,
+      "target": "SB-ASH-Ç-14",
+      "targetTitle": "Şoklanamaz Ritim - Asistoli / NEA",
+      "title_match_score": 1.0,
+      "navigation_note": "EK-2 pediatrik şoklanır ritim sayfasında “Resüsitasyon sonrası bakım algoritmasına git” açık hedefi vardır.",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-13",
+      "sourceTitle": "Şoklanır Ritim - VF / Nabızsız VT",
+      "page": 110,
+      "target": "SB-ASH-Ç-15",
+      "targetTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "title_match_score": 0.4,
+      "navigation_note": "EK-2 pediatrik şoklanır ritim sayfasında “Resüsitasyon sonrası bakım algoritmasına git” açık hedefi vardır.",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-14",
+      "sourceTitle": "Şoklanamaz Ritim - Asistoli / NEA",
+      "page": 111,
+      "target": "SB-ASH-Ç-13",
+      "targetTitle": "Şoklanır Ritim - VF / Nabızsız VT",
+      "title_match_score": 1.0,
+      "navigation_note": "EK-2 pediatrik şoklanamaz ritim sayfasında “Resüsitasyon sonrası bakım algoritmasına git” açık hedefi vardır.",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-14",
+      "sourceTitle": "Şoklanamaz Ritim - Asistoli / NEA",
+      "page": 111,
+      "target": "SB-ASH-Ç-15",
+      "targetTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "title_match_score": 0.4,
+      "navigation_note": "EK-2 pediatrik şoklanamaz ritim sayfasında “Resüsitasyon sonrası bakım algoritmasına git” açık hedefi vardır.",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-20",
+      "targetTitle": "Hipoglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-19",
+      "targetTitle": "Hiperglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-10",
+      "targetTitle": "Bradikardi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-11",
+      "targetTitle": "Taşikardi - Nabızlı",
+      "title_match_score": 0.5,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-17",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-15",
+      "sourceTitle": "Resüsitasyon Sonrası Bakım / Yeniden Değerlendirme",
+      "page": 113,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPOGLİSEMİ/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-19",
+      "targetTitle": "Hiperglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-17",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-28",
+      "targetTitle": "Toksikoloji - Zehirlenme / Doz Aşımı",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-18",
+      "targetTitle": "Ateş Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-20",
+      "targetTitle": "Hipoglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-16",
+      "sourceTitle": "Bilinç Değişiklikleri",
+      "page": 115,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-17",
+      "sourceTitle": "Nöbet / Konvülziyon",
+      "page": 117,
+      "target": "SB-ASH-Ç-18",
+      "targetTitle": "Ateş Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-17",
+      "sourceTitle": "Nöbet / Konvülziyon",
+      "page": 117,
+      "target": "SB-ASH-Ç-20",
+      "targetTitle": "Hipoglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-18",
+      "sourceTitle": "Ateş Yönetimi",
+      "page": 119,
+      "target": "SB-ASH-Ç-09",
+      "targetTitle": "Septik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-18",
+      "sourceTitle": "Ateş Yönetimi",
+      "page": 119,
+      "target": "SB-ASH-Ç-17",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-19",
+      "sourceTitle": "Hiperglisemi",
+      "page": 120,
+      "target": "SB-ASH-Ç-16",
+      "targetTitle": "Bilinç Değişiklikleri",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-22",
+      "sourceTitle": "Hipertermi",
+      "page": 126,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-23",
+      "sourceTitle": "Hipotermi",
+      "page": 128,
+      "target": "SB-ASH-Ç-24",
+      "targetTitle": "Hipotermide Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-24",
+      "sourceTitle": "Hipotermide Arrest Yönetimi",
+      "page": 130,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-26",
+      "sourceTitle": "Suda Boğulma",
+      "page": 133,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-26",
+      "sourceTitle": "Suda Boğulma",
+      "page": 133,
+      "target": "SB-ASH-Ç-23",
+      "targetTitle": "Hipotermi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-27",
+      "sourceTitle": "Yanık",
+      "page": 136,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-28",
+      "sourceTitle": "Toksikoloji - Zehirlenme / Doz Aşımı",
+      "page": 137,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-28",
+      "sourceTitle": "Toksikoloji - Zehirlenme / Doz Aşımı",
+      "page": 137,
+      "target": "SB-ASH-Ç-20",
+      "targetTitle": "Hipoglisemi",
+      "title_match_score": 0.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-28",
+      "sourceTitle": "Toksikoloji - Zehirlenme / Doz Aşımı",
+      "page": 137,
+      "target": "SB-ASH-Ç-19",
+      "targetTitle": "Hiperglisemi",
+      "title_match_score": 1.0,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-28",
+      "sourceTitle": "Toksikoloji - Zehirlenme / Doz Aşımı",
+      "page": 137,
+      "target": "SB-ASH-Ç-17",
+      "targetTitle": "Nöbet / Konvülziyon",
+      "title_match_score": 0.5,
+      "navigation_note": {
+        "SB-ASH-Ç-20": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ilki.",
+        "SB-ASH-Ç-19": "Kaynak “HİPO/HİPERGLİSEMİ”; iki ayrı pediatrik hedefin ikincisi."
+      },
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-30",
+      "sourceTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "page": 140,
+      "target": "SB-ASH-Ç-12",
+      "targetTitle": "Arrest Yönetimi",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    },
+    {
+      "source": "SB-ASH-Ç-30",
+      "sourceTitle": "Travmalı Hastada Acil Olgu Yönetimi",
+      "page": 140,
+      "target": "SB-ASH-Ç-07",
+      "targetTitle": "Hipovolemik Şok",
+      "title_match_score": 1.0,
+      "navigation_note": "",
+      "verified": true
+    }
+  ]
+}

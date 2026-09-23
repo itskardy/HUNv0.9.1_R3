@@ -1,0 +1,4 @@
+PASS feedback disabled without server setup
+PASS feedback rejects extra patient fields, honeypot and foreign origin
+PASS feedback sequential abuse counter
+PASS email payload excludes raw IP and credentials

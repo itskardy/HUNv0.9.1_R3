@@ -1,0 +1,674 @@
+[
+  {
+    "drugId": "drug-adrenalin",
+    "ek2Name": "Adrenalin",
+    "ingredient": "Adrenalin (epinefrin)",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Haver/Osel ürün ve KÜB/KT",
+        "url": "https://www.haver.com.tr/ilaclar/adrenalin-osel-1-mgml-imivsc-enjeksiyonluk-cozelti-10-ampul"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-adenozin",
+    "ek2Name": "Adenozin",
+    "ingredient": "Adenozin",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/adenotek"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-amiodaron",
+    "ek2Name": "Amiodaron",
+    "ingredient": "Amiodaron hidroklorür",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Sanofi Cordarone KÜB",
+        "url": "https://www.sanofi.com/assets/countries/turkey/docs/products/prescription-products/C/cordarone-150-mg-iv-kub.pdf"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-asetilsalisilik-asit",
+    "ek2Name": "Asetilsalisilik Asit",
+    "ingredient": "Asetilsalisilik asit",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "TİTCK Akılcı İlaç Kullanımı portalı",
+        "url": "https://akilciilac.titck.gov.tr/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-atropin",
+    "ek2Name": "Atropin",
+    "ingredient": "Atropin sülfat",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/atropin-sulfat-osel"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-deksametazon",
+    "ek2Name": "Deksametazon",
+    "ingredient": "Deksametazon sodyum fosfat (deksametazona eşdeğer)",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Deksamet KÜB",
+        "url": "https://prospektus.co/ilaclar/deksamet-8-mg-2-ml-im-iv-enjeksiyonluk-cozelti/kisa-urun-bilgisi"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-diazepam",
+    "ek2Name": "Diazepam",
+    "ingredient": "Diazepam",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "DEVA Diazem KÜB",
+        "url": "https://deva.com.tr/uploads/product_files/uBgRVTV4grvmyuh7fmTh.pdf"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-difenhidramin",
+    "ek2Name": "Difenhidramin",
+    "ingredient": "Difenhidramin hidroklorür",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/benison"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-diltiazem",
+    "ek2Name": "Diltiazem",
+    "ingredient": "Diltiazem hidroklorür",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/diltizem-l"
+      },
+      {
+        "label": "Güncel ürün listesi",
+        "url": "https://www.ilacrehberi.com/s/diltiazem_hcl/2/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-dopamin",
+    "ek2Name": "Dopamin",
+    "ingredient": "Dopamin hidroklorür",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/dopadren"
+      },
+      {
+        "label": "Haver Dopasel",
+        "url": "https://www.haver.com.tr/ilaclar/dopasel-200-mg5-ml-iv-infuzyon-icin-konsantre-cozelti-iceren-ampul-3"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-fentanil",
+    "ek2Name": "Fentanil",
+    "ingredient": "Fentanil sitrat (fentanile eşdeğer)",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "VEM Talinat ürün/KÜB-KT",
+        "url": "https://vemilac.com/urunler/anestezi-ilaclari"
+      },
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/talinat"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-feniramin-maleat",
+    "ek2Name": "Feniramin Maleat",
+    "ingredient": "Feniramin hidrojen maleat / feniramin maleat",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Haver Lamelat ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-tedaviler/parenteral-tedaviler-dermatoloji"
+      },
+      {
+        "label": "Açık İlaç — Avil TİTCK KÜB/KT bağlantılı kayıt",
+        "url": "https://acikilac.com/ilac/avil"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-fenitoin",
+    "ek2Name": "Fenitoin",
+    "ingredient": "Fenitoin sodyum",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Haver nöroloji ürünleri/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-tedaviler/parenteral-tedaviler-norolojipsikiyatri"
+      },
+      {
+        "label": "Güncel fenitoin ürün listesi",
+        "url": "https://www.ilacrehberi.com/s/fenitoin_sodyum/2/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-furosemid",
+    "ek2Name": "Furosemid",
+    "ingredient": "Furosemid",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Sanofi Lasix KÜB",
+        "url": "https://www.sanofi.com/assets/countries/turkey/docs/products/prescription-products/L/lasix-20mg-2mL-IM-IV-enjeksiyonluk-cozelti-onayli-KUB-23.03.2022.pdf"
+      },
+      {
+        "label": "Desal KÜB",
+        "url": "https://prospektus.co/ilaclar/desal-ampul/kisa-urun-bilgisi"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-ibuprofen",
+    "ek2Name": "İbuprofen",
+    "ingredient": "İbuprofen",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Gerofen KÜB",
+        "url": "https://prospektus.co/ilaclar/gerofen-suspansiyon/kisa-urun-bilgisi"
+      },
+      {
+        "label": "Befron KÜB",
+        "url": "https://prospektus.co/ilaclar/befron-100-mg-5ml-suspansiyon/kisa-urun-bilgisi"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-ipratropium-bromur",
+    "ek2Name": "İpratropium Bromür",
+    "ingredient": "İpratropium bromür",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Tropisal KÜB",
+        "url": "https://prospektus.co/ilaclar/tropisal-0-5-mg-2-5-mg-2-5-ml-nebulizasyon-icin-inhalasyon-cozeltisi-20-flakon/kisa-urun-bilgisi"
+      },
+      {
+        "label": "İprasal KÜB",
+        "url": "https://prospektus.co/ilaclar/iprasal-nebulizasyon-icin-tek-dozluk-inhalasyon-cozeltisi-iceren-flakon/kisa-urun-bilgisi"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-isosorbid-dinitrat",
+    "ek2Name": "İsosorbid Dinitrat",
+    "ingredient": "İsosorbid dinitrat",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Cardioket KÜB",
+        "url": "https://www.ilacrehberi.com/v/cardioket-5-mg-40-tablet-8a15/kub/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-kalsiyum-glukonat",
+    "ek2Name": "Kalsiyum Glukonat",
+    "ingredient": "Kalsiyum glukonat (ürüne göre farklı kalsiyum tuzu kombinasyonları bulunabilir)",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Calcium Picken KÜB",
+        "url": "https://www.ilacrehberi.com/v/calcium-picken-10-enjeksiyonluk-cozelti-89fe/kub/"
+      },
+      {
+        "label": "Calcium-Sandoz KÜB",
+        "url": "https://www.ilacrehberi.com/v/calcium-sandoz-10-5-ampul-abf0/kub/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-karbetosin",
+    "ek2Name": "Karbetosin",
+    "ingredient": "Karbetosin",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Haver Karpaver ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/ozel-tedaviler"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-levetirasetam",
+    "ek2Name": "Levetirasetam",
+    "ingredient": "Levetirasetam",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Polifarma Levetam KÜB",
+        "url": "https://www.polifarma.com.tr/media/1621/22_kub_02-30092019.pdf"
+      },
+      {
+        "label": "Haver Lesitam ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-tedaviler/parenteral-tedaviler-norolojipsikiyatri"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-lidokain",
+    "ek2Name": "Lidokain",
+    "ingredient": "Lidokain hidroklorür",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/aritmal"
+      },
+      {
+        "label": "Güncel lidokain ürün listesi",
+        "url": "https://www.ilacrehberi.com/s/lidokain/2/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-magnezyum-sulfat",
+    "ek2Name": "Magnezyum Sülfat",
+    "ingredient": "Magnezyum sülfat heptahidrat",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Açık İlaç — TİTCK KÜB/KT bağlantılı ürün kaydı",
+        "url": "https://acikilac.com/ilac/magnezyum-sulfat-osel"
+      },
+      {
+        "label": "Haver Osel ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/magnezyum-sulfat-osel-15-imiv-enjeksiyonluk-cozelti-iceren-ampul-2"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-metil-prednizolon",
+    "ek2Name": "Metil Prednizolon",
+    "ingredient": "Metilprednizolon / parenteral ürünlerde metilprednizolon sodyum süksinat",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Güncel parenteral metilprednizolon ürün listesi",
+        "url": "https://www.ilac.ai/metilprednizolon"
+      },
+      {
+        "label": "Tredison ürün/KÜB kaydı",
+        "url": "https://ilacin.com/ilaclar/tredison-40-mg-imiv-enjeksiyonlukinfuzyonluk-cozelti-hazirlamak-icin-toz-ve-cozucu-1-flakon-1-cozucu-ampul-8680222790075/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-metoprolol",
+    "ek2Name": "Metoprolol",
+    "ingredient": "Metoprolol tartarat",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Haver Metloc ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar?page=14"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-midazolam",
+    "ek2Name": "Midazolam",
+    "ingredient": "Midazolam",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Güncel midazolam ürün listesi",
+        "url": "https://www.ilacrehberi.com/s/midazolam/2/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-nalokson",
+    "ek2Name": "Nalokson",
+    "ingredient": "Nalokson hidroklorür",
+    "productExamples": 1,
+    "sources": [
+      {
+        "label": "İstanbul Anadolu İl Ambulans Servisi ilaç listesi",
+        "url": "https://istanbulanadoluiasb.saglik.gov.tr/TR-277622/istasyonlarin-dikkat-etmesi-gereken-ilaclar-listesi.html"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-nifedipin",
+    "ek2Name": "Nifedipin",
+    "ingredient": "Nifedipin",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Nidicard KÜB",
+        "url": "https://prospektus.co/ilaclar/nidicard-10-mg-yumusak-kapsul/kisa-urun-bilgisi"
+      },
+      {
+        "label": "Adalat Crono KÜB",
+        "url": "https://prospektus.co/ilaclar/adalat-crono-30-mg-20-kontrollu-salim-tableti/kisa-urun-bilgisi"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-parasetamol",
+    "ek2Name": "Parasetamol",
+    "ingredient": "Parasetamol (asetaminofen)",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "TİTCK Akılcı İlaç Kullanımı portalı",
+        "url": "https://akilciilac.titck.gov.tr/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-salbutamol",
+    "ek2Name": "Salbutamol",
+    "ingredient": "Salbutamol (çoğu üründe salbutamol sülfat)",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Güncel salbutamol ürün listesi",
+        "url": "https://www.ilacrehberi.com/s/salbutamol/2/"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-sodyum-bikarbonat-nahco3",
+    "ek2Name": "Sodyum Bikarbonat / NaHCO3",
+    "ingredient": "Sodyum bikarbonat",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Haver/Osel ürün ve KÜB/KT",
+        "url": "https://www.haver.com.tr/ilaclar/molar-sodyum-bikarbonat-osel-84-enjeksiyonluk-cozelti-iceren-ampul-2"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-valproik-asit",
+    "ek2Name": "Valproik Asit",
+    "ingredient": "Sodyum valproat / valproik asit",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Sanofi Depakin IV ürün/KÜB-KT",
+        "url": "https://www.sanofi.com/tr/turkiye/saglik-cozumleri/urunlerimiz/receteli-urunler/depakin-400-mg-4-ml-flakon"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-0-9-nacl",
+    "ek2Name": "%0,9 NaCl",
+    "ingredient": "Sodyum klorür %0,9 (9 mg/mL)",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Haver parenteral çözeltiler ürün/KÜB-KT",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-cozeltiler"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-dekstroz",
+    "ek2Name": "Dekstroz",
+    "ingredient": "Dekstroz (glukoz)",
+    "productExamples": 3,
+    "sources": [
+      {
+        "label": "Haver parenteral çözeltiler",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-cozeltiler"
+      },
+      {
+        "label": "Polifleks %50 dekstroz KÜB/KT kaydı",
+        "url": "https://prospektus.co/ilaclar/polifleks-50-dekstroz-sudaki-i-v-infuzyon-icin-cozelti"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  },
+  {
+    "drugId": "drug-ringer-laktat",
+    "ek2Name": "Ringer Laktat",
+    "ingredient": "Ringer laktat elektrolit çözeltisi",
+    "productExamples": 2,
+    "sources": [
+      {
+        "label": "Haver parenteral çözeltiler",
+        "url": "https://www.haver.com.tr/ilaclar/parenteral-cozeltiler"
+      }
+    ],
+    "mechanism": true,
+    "indications": true,
+    "caution": true,
+    "reviewedOn": "2026-09-23",
+    "directOfficialHostForEveryProduct": false,
+    "note": "Ürün örnekleri otomatik eşdeğer değildir; form/konsantrasyon/yol uyarıları kartta gösterilir."
+  }
+]

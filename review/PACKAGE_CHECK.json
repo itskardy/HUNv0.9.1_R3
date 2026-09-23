@@ -1,0 +1,18 @@
+{
+  "version": "0.9.1",
+  "build": "audit-r2",
+  "date": "2026-09-23",
+  "fileCount": 205,
+  "pageImages": 148,
+  "offlineManifestEntries": 168,
+  "offlineManifestMissing": [],
+  "activeDoseRules": 147,
+  "historicalDoseRowsAudited": 148,
+  "drugCardsEnriched": 34,
+  "automatedTests": "PASS",
+  "realDeviceQA": "PENDING",
+  "notes": [
+    "Headless localhost PWA navigation blocked by environment policy ERR_BLOCKED_BY_ADMINISTRATOR.",
+    "Physical Android/iPhone testing not available in build environment."
+  ]
+}
