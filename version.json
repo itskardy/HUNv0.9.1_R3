@@ -1,0 +1,13 @@
+{
+  "appVersion": "0.9.1",
+  "sourceDate": "25.08.2026",
+  "build": "health-unit-navigator-v0.9.1-audit-r2",
+  "releaseStatus": "development-beta",
+  "clinicalDataVersion": "0.7.0",
+  "masterBacklogFullyReconciled": true,
+  "clinicalAuditDate": "2026-09-23",
+  "historicalDoseRowsAudited": 148,
+  "activeDoseRules": 147,
+  "drugCardsEnriched": 34,
+  "realDeviceQA": "pending"
+}

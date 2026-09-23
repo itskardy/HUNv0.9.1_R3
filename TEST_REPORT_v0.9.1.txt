@@ -1,0 +1,34 @@
+23.09.2026 — HUN v0.9.1
+
+PASS: npm test zinciri başarıyla tamamlandı: 57 statik/yapısal/veri bütünlüğü + 3 service worker + 8 güvenlik/EKG/backend + 4 feedback kontrolü = 72 otomatik kontrol.
+PASS: Ek master-logic spot regresyonu 3/3 (bradikardi yönlendirmesi, ST/AKS bağlantısı, MAP/Şok İndeksi hesabı).
+PASS: 148/148 EK-2 sayfa görseli mevcut.
+PASS: Offline manifestte referans verilen dosyalar mevcut.
+PASS: Service worker core varlıkları mevcut ve v091-tools.js cache listesinde.
+PASS: HUN-091-001…016 backlog maddelerinin kaynak dokümanda bulunduğu doğrulandı.
+PASS: Asetilsalisilik Asit / Aspirin kanonikleştirmesi; Aspirin alias olarak korunuyor.
+PASS: Bilinen API key/token/private-key desenleri için kaynak taramasında eşleşme yok.
+
+SINIR: Chromium/Playwright ile gerçek DOM runtime testi bu çalışma ortamının yerel URL/file erişimini ERR_BLOCKED_BY_ADMINISTRATOR ile engellemesi nedeniyle çalıştırılamadı; güvenlik kısıtı aşılmadı.
+SINIR: Gerçek mobil PWA kurulum, uçak modu/offline, yazdır/PDF ve Cloudflare canlı deployment testi bu paket oluşturma adımında yapılmadı.
+SINIR: EKG klinik karar desteği v0.9.1 boyunca YAPIM AŞAMASINDA uyarısını korur.
+SINIR: Tüm ilaçlar için resmî KÜB/KT + 2–3 muadil denetimi tamamlanmış kabul edilmez; doğrulanmamış bilgi uydurulmaz.
+
+
+R3 EKG UX / LOGO TEST KAPSAMI
+- Canonical HUN logo icon-192/icon-512 ve ekran içi logo referanslarında kullanıldı.
+- EKG aktif hasta bağlamı otomatik görünür; yaş/yaş birimi aktif hastadan pediatrik EKG'ye aktarılır.
+- AKS klinik bulgu seçimi: Var / Yok / Değerlendirilemedi; boş durum kullanıcıya Girilmedi seçeneği olarak sunulmaz.
+- Pediatrik bradikardi koşulları kompakt klinik kartta ve yalnız pediatrik seçimde görünür.
+- ST elevasyonu 12 derivasyon checkbox grid ile girilir; boş kutu negatif sonuç olarak raporlanmaz.
+- ST anatomik bölge etiketi AHA kaynaklı, EK-2 dışı yardımcı bilgi olarak işaretlidir.
+- EKG özet/rapor girilmemiş ritim alanlarında Girilmedi üretmez.
+
+R3 OTOMATİK TEST SONUCU
+- tests_v091.py: 64/64 PASS
+- Service worker update/offline fallback: PASS
+- Privacy/security/backend schema tests: PASS
+- Clinical audit regression tests: PASS
+- Print regression tests: PASS
+- Ek statik R3 kontrolü: 12 ST checkbox, AKS kompakt seçim, canonical logo hash eşleşmesi, EKG özetinde eksik alanların gizlenmesi: PASS
+- Gerçek Android/iPhone PWA + uçak modu testi manuel release gate olarak kalır.

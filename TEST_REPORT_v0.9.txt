@@ -1,0 +1,7 @@
+22.09.2026
+26 DOM senaryosu + 3 service worker test grubu + 8 gizlilik/EKG/backend testi + 4 feedback test grubu geçti.
+166 offline dosya; 148 şema görseli mevcut ve önceki sürümle aynı. Eksik script yok; bilinen credential desen eşleşmesi yok.
+GERCEK CIHAZ/OFFLINE/CLOUDFLARE TEST EDILMEDI.
+KLINIK KAYNAK VE TUM ILAC DENETIMI TAMAMLANMADI.
+FINAL YAYIN KAPILARI GECMEDI.
+Ayrıntı: review/ sonuçları, docs/RELEASE_GATES.md
