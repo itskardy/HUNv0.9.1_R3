@@ -143,7 +143,7 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
 }
 
 .catSupportQr img{
-  width:190px;
+  width:110px;
   max-width:70%;
   height:auto;
   display:block;
@@ -215,25 +215,6 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
   font-weight:800;
 }
 
-.catSupportFooter{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:7px;
-  margin-top:18px;
-  padding-top:15px;
-  border-top:1px solid #eee9df;
-  color:#777066;
-}
-
-.catSupportFooter span{
-  font-size:20px;
-}
-
-.catSupportFooter small{
-  font-size:9px;
-}
-
 @media(max-width:600px){
   .catSupportBody{
     padding:14px 10px 30px;
@@ -245,11 +226,46 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
   }
 
   .catSupportQr img{
-    width:170px;
+    width:110px;
   }
 
   .catSupportIbanBox input{
     font-size:11px;
     letter-spacing:0;
+  }
+}
+/* Cat support mascot */
+.catSupportIntro{
+  position:relative;
+  align-items:center;
+  min-height:82px;
+  overflow:hidden;
+}
+
+.catSupportIntroText{
+  flex:1;
+  min-width:0;
+  padding-right:90px;
+}
+
+.catSupportMascot{
+  position:absolute;
+  right:8px;
+  bottom:-8px;
+  width:88px;
+  height:88px;
+  object-fit:contain;
+  image-rendering:pixelated;
+  pointer-events:none;
+}
+
+@media(max-width:380px){
+  .catSupportIntroText{
+    padding-right:72px;
+  }
+
+  .catSupportMascot{
+    width:72px;
+    height:72px;
   }
 }
