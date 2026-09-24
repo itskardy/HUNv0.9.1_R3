@@ -269,3 +269,34 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
     height:72px;
   }
 }
+
+/* Cat mascot hard size override */
+#catSupportModal .catSupportMascot{
+  position:absolute !important;
+  right:10px !important;
+  bottom:4px !important;
+  width:58px !important;
+  height:58px !important;
+  max-width:58px !important;
+  max-height:58px !important;
+  object-fit:contain !important;
+  image-rendering:pixelated;
+}
+
+#catSupportModal .catSupportIntro{
+  position:relative;
+  overflow:hidden;
+  min-height:64px;
+}
+
+#catSupportModal .catSupportIntroText{
+  padding-right:68px;
+}
+
+#catSupportModal .catSupportQr img{
+  width:90px !important;
+  height:90px !important;
+  max-width:90px !important;
+  max-height:90px !important;
+  object-fit:contain;
+}
