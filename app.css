@@ -300,3 +300,58 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
   max-height:90px !important;
   object-fit:contain;
 }
+
+/* Cat support final responsive sizing */
+
+/* QR: 180 × 180 */
+#catSupportModal .catSupportQr img{
+  width:180px !important;
+  height:180px !important;
+  max-width:180px !important;
+  max-height:180px !important;
+  object-fit:contain;
+}
+
+/* Pixel cat */
+#catSupportModal .catSupportMascot{
+  width:58px !important;
+  height:58px !important;
+  max-width:58px !important;
+  max-height:58px !important;
+}
+
+/* DESKTOP */
+@media(min-width:701px){
+
+  #catSupportModal{
+    background:rgba(0,0,0,.55);
+    padding:40px 20px;
+  }
+
+  #catSupportModal .modalbar{
+    position:relative;
+    width:min(520px, calc(100% - 40px));
+    box-sizing:border-box;
+    margin:0 auto;
+    border-radius:18px 18px 0 0;
+  }
+
+  #catSupportModal .catSupportBody{
+    width:min(520px, calc(100% - 40px));
+    box-sizing:border-box;
+    margin:0 auto;
+    padding:0 0 20px;
+    background:#fff;
+    border-radius:0 0 18px 18px;
+  }
+
+  #catSupportModal .catSupportCard{
+    width:100%;
+    max-width:none;
+    box-sizing:border-box;
+    margin:0;
+    border:0;
+    border-radius:0 0 18px 18px;
+    box-shadow:none;
+  }
+}
