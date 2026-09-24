@@ -17,7 +17,28 @@ async function status(){
 }
 q('#openFeedback').onclick=()=>{feedbackScreen=screen();q('#feedbackModal').classList.add('open');q('#feedbackStatus').textContent=available.feedback?'':'Gönderim servisi henüz etkin değil. Mesajınız gönderilmedi.';};
 q('#closeFeedback').onclick=()=>q('#feedbackModal').classList.remove('open');
-q('#catSupport').onclick=()=>q('#catMessage').textContent='Kediler bu habere çok sevindi! Ama henüz bu mümkün değil. Teşekkür ederiz.';
+q('#catSupport').onclick=()=>{
+  q('#catSupportStatus').textContent='';
+  q('#catSupportModal').classList.add('open');
+};
+
+q('#closeCatSupport').onclick=()=>{
+  q('#catSupportModal').classList.remove('open');
+};
+
+q('#copyCatSupportIban').onclick=async()=>{
+  const iban=q('#catSupportIban').value.trim();
+  const status=q('#catSupportStatus');
+
+  try{
+    await navigator.clipboard.writeText(iban);
+    status.textContent='IBAN kopyalandı.';
+  }catch{
+    q('#catSupportIban').select();
+    document.execCommand('copy');
+    status.textContent='IBAN kopyalandı.';
+  }
+};
 q('#feedbackForm').onsubmit=async e=>{
  e.preventDefault();const output=q('#feedbackStatus');
  if(!navigator.onLine){output.textContent='Çevrimdışısınız. Mesaj gönderilmedi; internet bağlantısıyla yeniden deneyin.';return;}
