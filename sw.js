@@ -1,4 +1,4 @@
-const VERSION='0.9.1-r6';
+const VERSION='0.9.1-r7';
 const PREFIX='hun-'+encodeURIComponent(new URL(self.registration.scope).pathname)+'-';
 const CORE=PREFIX+'core-'+VERSION,OFFLINE=PREFIX+'offline-'+VERSION;
 const CORE_ASSETS=['./drug-info.js','./privacy.js','./master-logic.js','./master-tools.js','./services.js','./','./index.html','./app.css','./data.js','./clinical-data-v070.js','./app.js','./v090-tools.js','./v091-tools.js','./manifest.webmanifest','./offline-manifest.json','./icon-192.png','./icon-512.png'];
