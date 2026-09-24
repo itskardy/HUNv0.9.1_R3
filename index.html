@@ -271,16 +271,55 @@
     <b id="catSupportTitle">Kediler için mama desteği</b>
     <button id="closeCatSupport" type="button">Kapat</button>
   </div>
-  <div class="modalbody">
-    <p>Gönüllü destektir; HUN kullanımıyla bağlantılı değildir. Destek göndermek uygulamanın kullanımı, klinik işlevleri veya herhangi bir hasta kaydı için şart değildir.</p>
-    <label>Hesap sahibi<input id="catSupportOwner" type="text" value="Kardelen Sumak" readonly></label>
-    <div style="text-align:center;margin:12px 0 18px">
-  <img src="./sharedQrCode.png" alt="Mama desteği QR kodu" style="width:180px;max-width:65%;height:auto;border-radius:14px;border:1px solid #e3ded3;padding:8px;background:#fff">
-  <div style="font-size:10px;color:#777;margin-top:6px">Mobil bankacılık uygulamanızla QR kodu okutabilirsiniz.</div>
-</div>
-    <label>IBAN<input id="catSupportIban" type="text" value="TR93 0006 4000 0013 0002 3207 08" readonly></label>
-    <button id="copyCatSupportIban" class="actionBtn gold" type="button">IBAN’ı Kopyala</button>
-    <p id="catSupportStatus" role="status"></p>
+
+  <div class="modalbody catSupportBody">
+    <div class="catSupportCard">
+
+      <div class="catSupportIntro">
+        <div class="catSupportPaw">🐾</div>
+        <div>
+          <strong>Küçük bir mama desteği</strong>
+          <p>
+            Gönüllü destektir; HUN kullanımı ve klinik işlevlerden tamamen bağımsızdır.
+          </p>
+        </div>
+      </div>
+
+      <div class="catSupportQr">
+        <img src="./sharedQrCode.png" alt="Mama desteği QR kodu">
+        <span>Mobil bankacılık uygulamanızla QR kodu okutabilirsiniz.</span>
+      </div>
+
+      <div class="catSupportDetails">
+
+        <div class="catSupportRow">
+          <span>Hesap sahibi</span>
+          <strong id="catSupportOwner">Kardelen Sumak</strong>
+        </div>
+
+        <div class="catSupportIbanBox">
+          <span>IBAN</span>
+          <input
+            id="catSupportIban"
+            type="text"
+            value="TR93 0006 4000 0013 0002 3207 08"
+            readonly
+          >
+        </div>
+
+        <button id="copyCatSupportIban" class="actionBtn gold" type="button">
+          IBAN’ı Kopyala
+        </button>
+
+        <p id="catSupportStatus" role="status"></p>
+      </div>
+
+      <div class="catSupportFooter">
+        <span>🐈‍⬛</span>
+        <small>İş yeri kedilerine mama desteği için. Teşekkür ederiz.</small>
+      </div>
+
+    </div>
   </div>
 </div>
 
