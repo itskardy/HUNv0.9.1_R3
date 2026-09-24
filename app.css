@@ -337,7 +337,7 @@ main{padding:15px}.hero{background:linear-gradient(135deg,#151515,#28241b);borde
   }
 
   #catSupportModal .catSupportBody{
-    width:min(520px, calc(100% - 40px));
+    width:min(300px, calc(100% - 40px));
     box-sizing:border-box;
     margin:0 auto;
     padding:0 0 20px;
