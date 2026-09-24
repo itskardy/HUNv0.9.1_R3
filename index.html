@@ -29,8 +29,6 @@
     <div class="searchhint">Arama; algoritma, Anahtar Bilgiler ve EK-2'nin klinik sayfalarındaki metin indeksinde cihaz üzerinde çalışır.</div>
   </div>
 
-
-
   <section id="homeScreen" class="screen active">
     <div class="hero">
       <img class="heroLogo" src="./icon-192.png" alt="HUN medic amblemi"><div class="eyebrow">BETA / GELİŞTİRME TESTİ</div>
@@ -254,7 +252,6 @@
   <div class="modalbody"><div id="catGrid" class="catgrid"></div></div>
 </div>
 
-
 <div id="doseModal" class="modal"><div class="modalbar"><b>Doz + Uygulama Hesaplama</b><button id="closeDose">Kapat</button></div><div class="modalbody">
   <div class="doseintro"><b>EK-2 kaynaklı hesaplama</b><span>v0.9.1, v0.7’de EK-2’den yapılandırılıp doğrulanmış doz/uygulama veri setini değişmeden kullanır. Yaş-kilo sınırları, maksimum/minimum dozlar, hız ve hazırlama bilgileri kaynakta varsa zorunlu uygulanır.</span></div>
   <div class="doseform">
@@ -268,36 +265,22 @@
 </div></div>
 <div id="medRecordModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="medRecordTitle"><div class="modalbar"><b id="medRecordTitle">Hasta Kaydına Ekle</b><button id="closeMedRecord">Kapat</button></div><div class="modalbody"><p id="medPatient"></p><div id="medSource" class="notice"></div><div id="medConfirmSummary" class="medConfirmSummary"></div><button id="expandMedRecord" type="button" class="actionBtn ghost compactEdit" style="display:none">Düzenle</button><div class="fieldgrid medRecordFields"><label>İlaç / solüsyon<input id="medName" maxlength="100"></label><label>Kayıt tarihi / saati<div class="dateTimeField"><input id="medAt" type="text" inputmode="numeric" placeholder="GG.AA.YYYY HH:mm"><button type="button" class="nowBtn" data-now-for="medAt">Şimdi</button></div></label><label>Hesaplanan doz<input id="medCalculated" readonly></label><label>Durum<select id="medStatus"><option value="applied" selected>Uygulandı</option><option value="planned">Hesap / plan — uygulanmadı</option></select></label><label>Uygulanan doz / miktar<input id="medApplied" maxlength="100" placeholder="Uygulama yapıldıysa girin"></label><label>Uygulama yolu<input id="medRoute" list="routeOptions" maxlength="80"></label><label>Doz / miktar birimi<input id="medUnit" maxlength="24" placeholder="mg, mcg, mL, mg/dk…"></label><label>Uygulayan kişi (isteğe bağlı)<input id="medPractitioner" maxlength="100"></label><label class="wide" id="medReasonWrap" style="display:none">Doz değişikliği nedeni<input id="medReason" maxlength="500" placeholder="Hesaplanan dozdan farklıysa gerekli"></label><label class="wide">Not<textarea id="medNote" maxlength="1000" rows="3"></textarea></label></div><button id="saveMedRecord" class="actionBtn gold">Hasta Kaydına Ekle</button></div></div>
 <div id="feedbackModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle"><div class="modalbar"><b id="feedbackTitle">Geri bildirim</b><button id="closeFeedback">Kapat</button></div><div class="modalbody"><p>Hasta/sicil/vital/ilaç/doz/sonuç veya kişisel bilgi yazmayın. Yalnız yazdığınız mesaj, sürüm, bölüm ve cihaz türü gönderilir.</p><form id="feedbackForm"><label>Mesaj<textarea id="feedbackMessage" rows="6" minlength="10" maxlength="2000" required></textarea></label><label class="honeypot" aria-hidden="true">Web sitesi<input id="feedbackWebsite" tabindex="-1" autocomplete="off"></label><label><input id="feedbackConfirm" type="checkbox" required> Mesajın hasta bilgisi içermediğini kontrol ettim.</label><button type="submit" class="actionBtn">Gönder</button></form><p id="feedbackStatus" role="status"></p></div></div>
+
 <div id="catSupportModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="catSupportTitle">
   <div class="modalbar">
     <b id="catSupportTitle">Kediler için mama desteği</b>
-    <button id="closeCatSupport">Kapat</button>
+    <button id="closeCatSupport" type="button">Kapat</button>
   </div>
-
   <div class="modalbody">
-    <p>
-      Gönüllü destektir; HUN kullanımıyla bağlantılı değildir.
-      Destek göndermek uygulamanın kullanımı veya klinik işlevleri için şart değildir.
-    </p>
-
-    <label>
-      Hesap sahibi
-      <input id="catSupportOwner" type="text" value="KARDELEN SUMAK" readonly>
-    </label>
-
-    <label>
-      IBAN
-      <input id="catSupportIban" type="text" value="IBAN" readonly>
-    </label>
-
-    <button id="copyCatSupportIban" class="actionBtn gold" type="button">
-      IBAN’ı Kopyala
-    </button>
-
+    <p>Gönüllü destektir; HUN kullanımıyla bağlantılı değildir. Destek göndermek uygulamanın kullanımı, klinik işlevleri veya herhangi bir hasta kaydı için şart değildir.</p>
+    <label>Hesap sahibi<input id="catSupportOwner" type="text" value="Kardelen Sumak" readonly></label>
+    <label>IBAN<input id="catSupportIban" type="text" value="TR50 0011 1000 0000 0168 2115 76" readonly></label>
+    <button id="copyCatSupportIban" class="actionBtn gold" type="button">IBAN’ı Kopyala</button>
     <p id="catSupportStatus" role="status"></p>
   </div>
 </div>
-  <div id="reportModal" class="modal"><div class="modalbar"><b>Vaka Sonu Raporu</b><button id="closeReport">Kapat</button></div><div class="modalbody reportBody"><div class="reportActions"><button id="printReport" class="actionBtn gold">Yazdır / PDF Kaydet</button></div><article id="caseReport" class="caseReport"></article></div></div>
+
+<div id="reportModal" class="modal"><div class="modalbar"><b>Vaka Sonu Raporu</b><button id="closeReport">Kapat</button></div><div class="modalbody reportBody"><div class="reportActions"><button id="printReport" class="actionBtn gold">Yazdır / PDF Kaydet</button></div><article id="caseReport" class="caseReport"></article></div></div>
 <div id="onboard" class="onboard"><div class="onboardCard"><img class="onboardLogo" src="./icon-192.png" alt="HUN medic amblemi"><div class="eyebrow">HOŞ GELDİNİZ</div><h2>Health Unit Navigator</h2><p>Bu uygulama EK-2 akış şemalarını ve kaynakla sınırlı hesaplama araçlarını telefonda/tablette hızlı erişilebilir hale getirir.</p><div class="checklist"><div class="check">✓ 78 orijinal akış şeması</div><div class="check">✓ Doz + uygulama hesaplama</div><div class="check">✓ Aktif hasta, vital ve vaka sonu raporu</div><div class="check">✓ GKS, BE-FAST, AVPU ve EKG yardımcısı</div><div class="check">✓ Offline kullanım için tek seferlik hazırlama</div></div><p><b>Not:</b> Klinik kararlarda resmi EK-2 kaynağı ve kurum prosedürleri esas alınmalıdır.</p><div class="onboardActions"><button id="skipOnboard">Kapat</button><button class="primary" id="startOfflineFromOnboard">Offline Hazırla</button></div></div></div>
 <nav class="bottom"><div class="bottominner">
   <button class="navbtn active" data-nav="home"><i>⌂</i><span>Ana</span></button>
